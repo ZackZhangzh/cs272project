@@ -81,4 +81,6 @@ def tagging_and_grouping(
 
 
 if __name__ == "__main__":
-    grouped = tagging_and_grouping("your/image/folder", save_csv="output.csv")
+    grouped = tagging_and_grouping(
+        "/home/zhihao/cs272project/data/input", save_csv="output.csv"
+    )

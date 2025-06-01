@@ -30,8 +30,32 @@ python setup.py install
 python duplicates.py
 ```
 
-## Face2Face
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Face2Face
+https://github.com/kimoktm/Face2face
 ```bash
 
 bzip2 -d
@@ -39,6 +63,10 @@ xvfb-run -a
 ```
 
 ```bash
+conda install scikit-learn=0.23
+
+
+
 cd Face2face
 xvfb-run -a  python cli/initialize.py --input_dir /home/zhihao/cs272project/data/input --output_dir /home/zhihao/cs272project/data/identity
 
