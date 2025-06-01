@@ -45,7 +45,7 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
         with gr.Column(scale=2):
             selected_image = gr.Image(label="选中的图片1", interactive=False)
             process_btn = gr.Button("处理选中图片")
-            # selected_image2 = gr.Image(label="处理结果示意", interactive=False)
+            selected_image2 = gr.Image(label="处理结果示意", interactive=False)
 
             # Track last selected image index
             selected_images = []
@@ -56,8 +56,6 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
                 return path, path
 
         with gr.Column(scale=2):
-            from utils.caption import image_captioning
-
             upload = gr.Image(
                 label="上传图片", type="pil"
             )  # 使用 gr.Image 上传图像，类型为 PIL 图像
@@ -130,18 +128,10 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
 
             # Event binding (dynamic based on Radio)
 
-            def handle_image_caption():
-                """Handle image captioning"""
-                if SELECT_IMAGE_PATH:
-                    print(f"Processing image: {SELECT_IMAGE_PATH}")
-                    caption = image_captioning((SELECT_IMAGE_PATH))
-                    return caption
-                return "No image selected"
-
             process_btn.click(
-                fn=handle_image_caption,  # Placeholder function for processing
-                inputs=None,
-                outputs=[caption_txt],
+                fn=handle_network_imageprocess,  # Placeholder function for processing
+                inputs=selected_image,
+                outputs=[selected_image2, caption_txt],
             )
 
         # NOTE UPLOAD FUNCTIONALITY
@@ -187,43 +177,15 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
     gr.Markdown("# 📷 自动查重 demo")
     gr.Markdown("对库内所有图像进行")
     with gr.Row():
-
         dedup_btn = gr.Button("开始查重")
-
     with gr.Row():
         dup_result = gr.Gallery(
             label="查重结果",
-            columns=20,
+            columns=5,
             height=200,
             object_fit="cover",
             interactive=False,
         )
-
-    def dedup_processing():
-        """Deduplication processing function"""
-        # Placeholder for deduplication logic
-        # Here we just return the same images for demonstration purposes
-        image_path_dir = SAVE_DIR
-        from imagededup.methods import CNN
-
-        cnn_encoder = CNN()
-        # process
-
-        res_vec = []
-        res_vec = cnn_encoder.find_duplicates_to_remove(
-            image_dir=image_path_dir,
-            min_similarity_threshold=0.85,
-            # outfile="output/my_duplicates_to_remove.json",
-        )
-        # image_paths = [os.path.join(image_path_dir, item) for item in res_vec]
-
-        return [os.path.join(image_path_dir, item) for item in res_vec]
-
-    dedup_btn.click(
-        fn=dedup_processing,  # Placeholder function for deduplication
-        inputs=None,
-        outputs=[dup_result],  # Update the gallery with deduplicated images
-    )
 
     # NOTE  TAgging Grouping
     gr.Markdown("# 📷 聚类 分类 demo")
@@ -241,32 +203,6 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
             object_fit="cover",
             interactive=False,
         )
-    from utils.tagging import tagging_and_grouping
-
-    def handle_text_search(text):
-        """Handle text search and return matching images"""
-        # Placeholder for text search logic
-        # Here we just return the same images for demonstration purposes
-        image_path_dir = SAVE_DIR
-        # image_paths = glob.glob(os.path.join(image_path_dir, "*.png")) + glob.glob(
-        #     os.path.join(image_path_dir, "*.jpg")
-        # )
-
-        res_vec = tagging_and_grouping(
-            image_path_dir,
-            [text],  # Use the input text as the label prompt
-        )
-        image_paths = res_vec.get(text)
-        print(f"Search results for '{text}': {image_paths}")
-
-        # For demo, return all images
-        return image_paths
-
-    txt_btn.click(
-        fn=handle_text_search,  # Placeholder function for text search
-        inputs=txxt_input,
-        outputs=[gallery_output],  # Update the gallery with search results
-    )
 
     gr.Markdown("人脸自动聚类")
     with gr.Row():

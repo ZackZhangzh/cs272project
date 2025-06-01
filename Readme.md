@@ -1,4 +1,7 @@
 # CV2 project
+
+
+pip install transformers=4.43
 flask
 ## Qwen
 

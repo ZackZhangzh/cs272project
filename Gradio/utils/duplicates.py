@@ -1,7 +1,7 @@
 from imagededup.methods import PHash
 
 phasher = PHash()
-image_dir = "/home/zhihao/cs272project/data/input"
+image_dir = "/home/zhihao/cs272project/Gradio/examples/photos"
 # Generate encodings for all images in an image directory
 encodings = phasher.encode_images(image_dir=image_dir)
 
@@ -20,8 +20,9 @@ duplicates = cnn_encoder.find_duplicates(
     outfile="output/my_duplicates.json",
 )
 
+print("find_duplicates:", duplicates)
 
-print("find_duplicates with CNN:", duplicates)
+
 duplicates = cnn_encoder.find_duplicates_to_remove(
     image_dir=image_dir,
     min_similarity_threshold=0.85,
