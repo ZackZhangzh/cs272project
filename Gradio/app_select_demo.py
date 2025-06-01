@@ -3,6 +3,11 @@ import os
 import glob
 import hashlib
 
+
+global SELECT_IMAGE_PATH
+SELECT_IMAGE_PATH = ''  # Initialize global variable to store selected image path
+
+
 def load_image():
     path = 'examples/photos'
     image_paths = glob.glob(os.path.join(path, '*.png')) + glob.glob(os.path.join(path, '*.jpg'))
@@ -11,6 +16,8 @@ def load_image():
 def select_image(evt: gr.SelectData):
     """Handle image selection"""
     print(evt.value)
+    global SELECT_IMAGE_PATH 
+    SELECT_IMAGE_PATH = evt.value['image']['path']  # Get the path of the selected image
     return evt.value['image']['path']  # Return selected image path
 
 # Launch Gradio interface
@@ -209,7 +216,10 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
     with gr.Row():
 
         def random_resp(message, history):
-            return random.choice(['yes', 'no'])
+            print('=======')
+            print(SELECT_IMAGE_PATH)
+            
+            return random.choice([f'{message} yes {SELECT_IMAGE_PATH}', f'{message} no {SELECT_IMAGE_PATH}'])
 
         gr.ChatInterface(random_resp)
         
