@@ -27,33 +27,29 @@ def get_images_base64_list(image_paths):
     return base64_list
 
 
-def qwen25_chat(message, image_paths, history=None):
+def chat_with_images(image_paths, messages):
     """
-    message: str, 用户输入文本
-    image_paths: str 或 list[str]，图片路径或路径列表
-    history: list, 历史对话（每项为dict: {"role":..., "content":[...]}），可为空
-    返回: reply 文本
+    image_paths: list of image file paths
+    messages: list of dicts, each dict like {"role": "user"/"assistant", "content": [...]}
+    Returns: 模型回复文本
     """
-    if isinstance(image_paths, str):
-        image_paths = [image_paths]
     base64_images = get_images_base64_list(image_paths)
-    # 构建本轮 user 消息
-    content = [{"type": "text", "text": message}]
-    for base64_img in base64_images:
-        content.append(
-            {
-                "type": "image_url",
-                "image_url": {"url": f"data:image/jpeg;base64,{base64_img}"},
-            }
-        )
-    user_msg = {"role": "user", "content": content}
-    # 合成完整消息历史
-    messages = history.copy() if history else []
-    messages.append(user_msg)
     client = OpenAI(
         base_url="https://api-inference.modelscope.cn/v1/",
         api_key="14a623da-3226-41dc-bd0e-f0d439662565",
     )
+    # 只在本轮 user 消消息中加图片
+    if messages and messages[-1]["role"] == "user":
+        content = messages[-1]["content"]
+        for base64_img in base64_images:
+            content.append(
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/jpeg;base64,{base64_img}"},
+                }
+            )
+        messages[-1]["content"] = content
+
     response = client.chat.completions.create(
         model="Qwen/Qwen2.5-VL-72B-Instruct",
         messages=messages,
@@ -68,6 +64,16 @@ def qwen25_chat(message, image_paths, history=None):
 
 # 用法示例（可删除）
 if __name__ == "__main__":
-    msg = input("请输入问题：")
-    img = input("请输入图片路径：")
-    print(qwen25_chat(msg, img, history=[]))
+    image_paths = ["/home/zhihao/cs272project/data/output/Nvi.png"]
+    messages = []
+    print("进入对话模式，输入 exit 退出。")
+    while True:
+        prompt = input("你想问什么？> ")
+        if prompt.strip().lower() == "exit":
+            break
+        messages.append({"role": "user", "content": [{"type": "text", "text": prompt}]})
+        reply = chat_with_images(image_paths, messages)
+        print("模型回复：", reply)
+        messages.append(
+            {"role": "assistant", "content": [{"type": "text", "text": reply}]}
+        )
