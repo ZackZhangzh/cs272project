@@ -33,6 +33,13 @@ python setup.py install
 python duplicates.py
 ```
 
+## Try on
+```bash
+
+cd StableVITON
+python inference.py  --config_path ./configs/VITONHD.yaml  --batch_size 2  --model_load_path ./ckpts/VITONHD.ckpt  --save_dir ./save --unpair
+```
+
 
 
 
