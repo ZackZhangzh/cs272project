@@ -113,3 +113,6 @@ StableVITON/DATA
 StableVITON/assets
 StableVITON/ckpts
 StableVITON/save
+grouping
+grouping_crop
+face_detection.ipynb

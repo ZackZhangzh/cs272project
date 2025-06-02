@@ -40,6 +40,19 @@ cd StableVITON
 python inference.py  --config_path ./configs/VITONHD.yaml  --batch_size 2  --model_load_path ./ckpts/VITONHD.ckpt  --save_dir ./save --unpair
 ```
 
+## Face Recognition and Grouping
+
+```bash
+from face_detection_grouping import cluster_faces
+cluster_faces(
+    "<path to images>",
+    "<path to save clustering result>",
+    face_crop_dir=<path to save cropped faces>,
+    eps=0.2,
+    min_samples=1
+)
+```
+
 
 
 
