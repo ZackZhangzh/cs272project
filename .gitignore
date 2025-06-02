@@ -109,3 +109,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+StableVITON/DATA
+StableVITON/assets
+StableVITON/ckpts
+StableVITON/save
