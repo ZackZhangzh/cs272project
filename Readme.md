@@ -101,10 +101,20 @@ python cli/tracker.py --input_dir path_to_tracking_images --output_dir path_to_s
 cd Face2FaceRHO
 
 python src/fitting.py --device cuda \
---src_img /home/zhihao/cs272project/data/input/cam_0001_0000.jpg \
---drv_img /home/zhihao/cs272project/data/output/Nvi.png \
---output_src_headpose /home/zhihao/cs272project/data/output/h \
---output_src_landmark /home/zhihao/cs272project/data/output/h \
---output_drv_headpose /home/zhihao/cs272project/data/output/h \
---output_drv_landmark /home/zhihao/cs272project/data/output/h
+--src_img /home/zhihao/cs272project/Gradio/examples/photos/cam_0001_0000.jpg \
+--drv_img /home/zhihao/cs272project/Gradio/examples/photos/0003_0000.jpg \
+--output_src_headpose /home/zhihao/cs272project/data/output/sh \
+--output_src_landmark /home/zhihao/cs272project/data/output/sl \
+--output_drv_headpose /home/zhihao/cs272project/data/output/dh \
+--output_drv_landmark /home/zhihao/cs272project/data/output/dl
+
+
+
+python src/reenact.py --config ./config/test_face2facerho.ini \
+--src_img /home/zhihao/cs272project/Gradio/examples/photos/cam_0001_0000.jpg \
+--src_headpose /home/zhihao/cs272project/data/output/sh \
+--src_landmark /home/zhihao/cs272project/data/output/sl \
+--drv_headpose /home/zhihao/cs272project/data/output/dh \
+--drv_landmark /home/zhihao/cs272project/data/output/dl \
+--output_dir /home/zhihao/cs272project/data/output
 ```

@@ -1,0 +1,233 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "tqdm",
+    "typing-extensions",
+    "dataclasses",
+    "portalocker",
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/iopath-0.1.10-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/LICENSE",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/METADATA",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/RECORD",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/WHEEL",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/iopath-0.1.10.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/iopath/__init__.py",
+    "lib/python3.11/site-packages/iopath/common/__init__.py",
+    "lib/python3.11/site-packages/iopath/common/download.py",
+    "lib/python3.11/site-packages/iopath/common/event_logger.py",
+    "lib/python3.11/site-packages/iopath/common/file_io.py",
+    "lib/python3.11/site-packages/iopath/common/non_blocking_io.py",
+    "lib/python3.11/site-packages/iopath/common/s3.py",
+    "lib/python3.11/site-packages/iopath/tabular/__init__.py",
+    "lib/python3.11/site-packages/iopath/tabular/tabular_io.py",
+    "lib/python3.11/site-packages/iopath/version.py",
+    "lib/python3.11/site-packages/iopath/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/download.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/event_logger.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/file_io.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/non_blocking_io.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/common/__pycache__/s3.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/tabular/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/tabular/__pycache__/tabular_io.cpython-311.pyc",
+    "lib/python3.11/site-packages/iopath/__pycache__/version.cpython-311.pyc"
+  ],
+  "fn": "iopath-0.1.10-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/iopath-0.1.10-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "36490f383e866282d4f0475aa8a8dd70",
+  "name": "iopath",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/iopath-0.1.10-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "sha256_in_prefix": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+        "size_in_bytes": 1086
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "562d48ba1d363a6bedb0d6254914257aaeaf86aebb89b9627611c0f9ed732313",
+        "sha256_in_prefix": "562d48ba1d363a6bedb0d6254914257aaeaf86aebb89b9627611c0f9ed732313",
+        "size_in_bytes": 454
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "17d2ddb940b910fe5d8360055c13ae49fde5b5f414d93183b1e020ee2e6ad86c",
+        "sha256_in_prefix": "17d2ddb940b910fe5d8360055c13ae49fde5b5f414d93183b1e020ee2e6ad86c",
+        "size_in_bytes": 2013
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "4749dceaa4f1ba82e4ed2840dbf63e51690df1975f0c11b607a12aa73d965dbb",
+        "sha256_in_prefix": "4749dceaa4f1ba82e4ed2840dbf63e51690df1975f0c11b607a12aa73d965dbb",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "68277e1943c6ad0bedc9567b813f0efb6d661e12ce3658c4467ea4cbdd9eec4f",
+        "sha256_in_prefix": "68277e1943c6ad0bedc9567b813f0efb6d661e12ce3658c4467ea4cbdd9eec4f",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "site-packages/iopath-0.1.10.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b21ccd8bb89fb6c37554616f4b49a19d60eddf4edc0404fa32da7e771c0b4005",
+        "sha256_in_prefix": "b21ccd8bb89fb6c37554616f4b49a19d60eddf4edc0404fa32da7e771c0b4005",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/iopath/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0c235d04461021792c89ad3d3415d4f35d3b9ac14bf5f0a58970d77dc9648749",
+        "sha256_in_prefix": "0c235d04461021792c89ad3d3415d4f35d3b9ac14bf5f0a58970d77dc9648749",
+        "size_in_bytes": 466
+      },
+      {
+        "_path": "site-packages/iopath/common/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0123fdedd9c5b94cb5ae583416f1240b79e3f0d85efd7b927eda466d726bdbd2",
+        "sha256_in_prefix": "0123fdedd9c5b94cb5ae583416f1240b79e3f0d85efd7b927eda466d726bdbd2",
+        "size_in_bytes": 244
+      },
+      {
+        "_path": "site-packages/iopath/common/download.py",
+        "path_type": "hardlink",
+        "sha256": "c3035d7e194d7925f68845d4e74b02c5f3273f4a3f44d322192a52e90383cec5",
+        "sha256_in_prefix": "c3035d7e194d7925f68845d4e74b02c5f3273f4a3f44d322192a52e90383cec5",
+        "size_in_bytes": 2653
+      },
+      {
+        "_path": "site-packages/iopath/common/event_logger.py",
+        "path_type": "hardlink",
+        "sha256": "004fc65fae8f0b260c43391785d70f1293e93c4e3c51837c6906fbbc51441f37",
+        "sha256_in_prefix": "004fc65fae8f0b260c43391785d70f1293e93c4e3c51837c6906fbbc51441f37",
+        "size_in_bytes": 3322
+      },
+      {
+        "_path": "site-packages/iopath/common/file_io.py",
+        "path_type": "hardlink",
+        "sha256": "fd20391c8ebebacf9acbc1336f0643433dd5668410e55c0d05e066d51cfd541e",
+        "sha256_in_prefix": "fd20391c8ebebacf9acbc1336f0643433dd5668410e55c0d05e066d51cfd541e",
+        "size_in_bytes": 58735
+      },
+      {
+        "_path": "site-packages/iopath/common/non_blocking_io.py",
+        "path_type": "hardlink",
+        "sha256": "cd01da0240677799725922620b02b5dee029d786e7ee369824e94ce4a4af9590",
+        "sha256_in_prefix": "cd01da0240677799725922620b02b5dee029d786e7ee369824e94ce4a4af9590",
+        "size_in_bytes": 15720
+      },
+      {
+        "_path": "site-packages/iopath/common/s3.py",
+        "path_type": "hardlink",
+        "sha256": "2ca5edbf55ba3f54415ebceb9d8a4cd927d24108993e2163b04c5ecbba7c9dad",
+        "sha256_in_prefix": "2ca5edbf55ba3f54415ebceb9d8a4cd927d24108993e2163b04c5ecbba7c9dad",
+        "size_in_bytes": 31653
+      },
+      {
+        "_path": "site-packages/iopath/tabular/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "25bf9e4803f238790789a985fa2551fbb02665bc3f0a337fb2fc8256b14e14f7",
+        "sha256_in_prefix": "25bf9e4803f238790789a985fa2551fbb02665bc3f0a337fb2fc8256b14e14f7",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "site-packages/iopath/tabular/tabular_io.py",
+        "path_type": "hardlink",
+        "sha256": "5b287921eea080e7f953a35629355d407ef8913fda4ecdfdd90c68c368848165",
+        "sha256_in_prefix": "5b287921eea080e7f953a35629355d407ef8913fda4ecdfdd90c68c368848165",
+        "size_in_bytes": 504
+      },
+      {
+        "_path": "site-packages/iopath/version.py",
+        "path_type": "hardlink",
+        "sha256": "d5410e9558f50c0b3fc60d7f5956eba31b1db82cab5d5f4c05dc4750a0126111",
+        "sha256_in_prefix": "d5410e9558f50c0b3fc60d7f5956eba31b1db82cab5d5f4c05dc4750a0126111",
+        "size_in_bytes": 96
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/download.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/event_logger.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/file_io.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/non_blocking_io.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/common/__pycache__/s3.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/tabular/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/tabular/__pycache__/tabular_io.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/iopath/__pycache__/version.cpython-311.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "iopath",
+  "sha256": "8528c38e929312ab4ac7d5bfefbaa38154eb205907e4ff616a2009ff97b39b47",
+  "size": 31300,
+  "subdir": "noarch",
+  "timestamp": 1723846821000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/iopath-0.1.10-pyhd8ed1ab_0.conda",
+  "version": "0.1.10"
+}

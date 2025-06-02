@@ -1,0 +1,463 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "numpy",
+    "tqdm",
+    "pillow",
+    "tabulate",
+    "portalocker",
+    "python >=3.6",
+    "pyyaml >=5.1",
+    "termcolor >=1.1",
+    "yacs >=0.1.6"
+  ],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/fvcore-0.1.5.post20221221-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/METADATA",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/RECORD",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/WHEEL",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/fvcore-0.1.5.post20221221.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/fvcore/__init__.py",
+    "lib/python3.11/site-packages/fvcore/common/__init__.py",
+    "lib/python3.11/site-packages/fvcore/common/benchmark.py",
+    "lib/python3.11/site-packages/fvcore/common/checkpoint.py",
+    "lib/python3.11/site-packages/fvcore/common/config.py",
+    "lib/python3.11/site-packages/fvcore/common/download.py",
+    "lib/python3.11/site-packages/fvcore/common/file_io.py",
+    "lib/python3.11/site-packages/fvcore/common/history_buffer.py",
+    "lib/python3.11/site-packages/fvcore/common/param_scheduler.py",
+    "lib/python3.11/site-packages/fvcore/common/registry.py",
+    "lib/python3.11/site-packages/fvcore/common/timer.py",
+    "lib/python3.11/site-packages/fvcore/nn/__init__.py",
+    "lib/python3.11/site-packages/fvcore/nn/activation_count.py",
+    "lib/python3.11/site-packages/fvcore/nn/distributed.py",
+    "lib/python3.11/site-packages/fvcore/nn/flop_count.py",
+    "lib/python3.11/site-packages/fvcore/nn/focal_loss.py",
+    "lib/python3.11/site-packages/fvcore/nn/giou_loss.py",
+    "lib/python3.11/site-packages/fvcore/nn/jit_analysis.py",
+    "lib/python3.11/site-packages/fvcore/nn/jit_handles.py",
+    "lib/python3.11/site-packages/fvcore/nn/parameter_count.py",
+    "lib/python3.11/site-packages/fvcore/nn/precise_bn.py",
+    "lib/python3.11/site-packages/fvcore/nn/print_model_statistics.py",
+    "lib/python3.11/site-packages/fvcore/nn/smooth_l1_loss.py",
+    "lib/python3.11/site-packages/fvcore/nn/squeeze_excitation.py",
+    "lib/python3.11/site-packages/fvcore/nn/weight_init.py",
+    "lib/python3.11/site-packages/fvcore/transforms/__init__.py",
+    "lib/python3.11/site-packages/fvcore/transforms/transform.py",
+    "lib/python3.11/site-packages/fvcore/transforms/transform_util.py",
+    "lib/python3.11/site-packages/fvcore/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/benchmark.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/checkpoint.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/config.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/download.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/file_io.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/history_buffer.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/param_scheduler.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/registry.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/common/__pycache__/timer.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/activation_count.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/distributed.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/flop_count.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/focal_loss.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/giou_loss.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/jit_analysis.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/jit_handles.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/parameter_count.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/precise_bn.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/print_model_statistics.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/smooth_l1_loss.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/squeeze_excitation.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/nn/__pycache__/weight_init.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/transforms/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/transforms/__pycache__/transform.cpython-311.pyc",
+    "lib/python3.11/site-packages/fvcore/transforms/__pycache__/transform_util.cpython-311.pyc"
+  ],
+  "fn": "fvcore-0.1.5.post20221221-pyhd8ed1ab_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/fvcore-0.1.5.post20221221-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "0a0797787d4c8d9f7b767da76774efad",
+  "name": "fvcore",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/fvcore-0.1.5.post20221221-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "e9fcff72d221d242109365f5c57fbed800f6a745ad83e1abd2f75b43bdfce57a",
+        "sha256_in_prefix": "e9fcff72d221d242109365f5c57fbed800f6a745ad83e1abd2f75b43bdfce57a",
+        "size_in_bytes": 603
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6cb3e425045964dd9206afdc0ea6790f4e5080a9f4a63f9bca94ce745542e6e4",
+        "sha256_in_prefix": "6cb3e425045964dd9206afdc0ea6790f4e5080a9f4a63f9bca94ce745542e6e4",
+        "size_in_bytes": 4552
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "sha256_in_prefix": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "fbf9278b53b9ec596a007d47cef7665fc0e0386691912750ec8294fece4d530a",
+        "sha256_in_prefix": "fbf9278b53b9ec596a007d47cef7665fc0e0386691912750ec8294fece4d530a",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "site-packages/fvcore-0.1.5.post20221221.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d25f0b1e3a9694ab6e4c6547a9cca7f90f6e224fcb308725de1e703e6f6c0c35",
+        "sha256_in_prefix": "d25f0b1e3a9694ab6e4c6547a9cca7f90f6e224fcb308725de1e703e6f6c0c35",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/fvcore/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "abdfe425f706413974040a8091c64c562db5dd5e7c8b477293959c30cd264720",
+        "sha256_in_prefix": "abdfe425f706413974040a8091c64c562db5dd5e7c8b477293959c30cd264720",
+        "size_in_bytes": 230
+      },
+      {
+        "_path": "site-packages/fvcore/common/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "25bf9e4803f238790789a985fa2551fbb02665bc3f0a337fb2fc8256b14e14f7",
+        "sha256_in_prefix": "25bf9e4803f238790789a985fa2551fbb02665bc3f0a337fb2fc8256b14e14f7",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "site-packages/fvcore/common/benchmark.py",
+        "path_type": "hardlink",
+        "sha256": "2b80db0e85a707d6b39ff7dd7d8c66622b4d5f6a5d1d994c4c6254f27e581382",
+        "sha256_in_prefix": "2b80db0e85a707d6b39ff7dd7d8c66622b4d5f6a5d1d994c4c6254f27e581382",
+        "size_in_bytes": 5592
+      },
+      {
+        "_path": "site-packages/fvcore/common/checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "3ae025fe27e50099a627588740b6de3f2a739611f6c0ce9c64c782122d24c9ff",
+        "sha256_in_prefix": "3ae025fe27e50099a627588740b6de3f2a739611f6c0ce9c64c782122d24c9ff",
+        "size_in_bytes": 22987
+      },
+      {
+        "_path": "site-packages/fvcore/common/config.py",
+        "path_type": "hardlink",
+        "sha256": "f03c9ef99916ebfa510aaab65218e7fc1ac9a97268da1ca3c76a6e417872874e",
+        "sha256_in_prefix": "f03c9ef99916ebfa510aaab65218e7fc1ac9a97268da1ca3c76a6e417872874e",
+        "size_in_bytes": 6073
+      },
+      {
+        "_path": "site-packages/fvcore/common/download.py",
+        "path_type": "hardlink",
+        "sha256": "9aaf451632f318c64ba52ad81a7d691d4ec24d5fb2421ab65957df2063371c1e",
+        "sha256_in_prefix": "9aaf451632f318c64ba52ad81a7d691d4ec24d5fb2421ab65957df2063371c1e",
+        "size_in_bytes": 141
+      },
+      {
+        "_path": "site-packages/fvcore/common/file_io.py",
+        "path_type": "hardlink",
+        "sha256": "ee231cc4266f954142d634d9f4c3c2d0e3766aa3b6b467fb2f0d50fde283ecfc",
+        "sha256_in_prefix": "ee231cc4266f954142d634d9f4c3c2d0e3766aa3b6b467fb2f0d50fde283ecfc",
+        "size_in_bytes": 2140
+      },
+      {
+        "_path": "site-packages/fvcore/common/history_buffer.py",
+        "path_type": "hardlink",
+        "sha256": "19554cf0eee1f0f34e1b02b1ce245cdc2f02c1c0c1b46a1167b659913f0c5d52",
+        "sha256_in_prefix": "19554cf0eee1f0f34e1b02b1ce245cdc2f02c1c0c1b46a1167b659913f0c5d52",
+        "size_in_bytes": 2352
+      },
+      {
+        "_path": "site-packages/fvcore/common/param_scheduler.py",
+        "path_type": "hardlink",
+        "sha256": "833385c2388130f8ff3438203e0e94d3958838f3186ed8b08667d49730cddf97",
+        "sha256_in_prefix": "833385c2388130f8ff3438203e0e94d3958838f3186ed8b08667d49730cddf97",
+        "size_in_bytes": 14229
+      },
+      {
+        "_path": "site-packages/fvcore/common/registry.py",
+        "path_type": "hardlink",
+        "sha256": "c38383a3bd1aad00ed82af1cef95dfe54226bd00271fb0441c35a3d97cf850f7",
+        "sha256_in_prefix": "c38383a3bd1aad00ed82af1cef95dfe54226bd00271fb0441c35a3d97cf850f7",
+        "size_in_bytes": 2546
+      },
+      {
+        "_path": "site-packages/fvcore/common/timer.py",
+        "path_type": "hardlink",
+        "sha256": "24f617298b5e7949696ee347135a83d93b80eedebf461ce8e185d13996ab543d",
+        "sha256_in_prefix": "24f617298b5e7949696ee347135a83d93b80eedebf461ce8e185d13996ab543d",
+        "size_in_bytes": 2019
+      },
+      {
+        "_path": "site-packages/fvcore/nn/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "106ce85850800a705bb5f60f2b19fe5d80eb1e4387a971ee669436b077795127",
+        "sha256_in_prefix": "106ce85850800a705bb5f60f2b19fe5d80eb1e4387a971ee669436b077795127",
+        "size_in_bytes": 784
+      },
+      {
+        "_path": "site-packages/fvcore/nn/activation_count.py",
+        "path_type": "hardlink",
+        "sha256": "afc8e46b7731879db7e16308ee08169cca08e6c2d34d1e3c3485a6cc0885d7d1",
+        "sha256_in_prefix": "afc8e46b7731879db7e16308ee08169cca08e6c2d34d1e3c3485a6cc0885d7d1",
+        "size_in_bytes": 4577
+      },
+      {
+        "_path": "site-packages/fvcore/nn/distributed.py",
+        "path_type": "hardlink",
+        "sha256": "6dddf648c369595010fb4041459a5c76500072121af2178dfe6ae4681ce495bf",
+        "sha256_in_prefix": "6dddf648c369595010fb4041459a5c76500072121af2178dfe6ae4681ce495bf",
+        "size_in_bytes": 1865
+      },
+      {
+        "_path": "site-packages/fvcore/nn/flop_count.py",
+        "path_type": "hardlink",
+        "sha256": "b5a02604a883bcda75deb918d68639d207c433938cf27e7034dd6de26a2956ba",
+        "sha256_in_prefix": "b5a02604a883bcda75deb918d68639d207c433938cf27e7034dd6de26a2956ba",
+        "size_in_bytes": 5443
+      },
+      {
+        "_path": "site-packages/fvcore/nn/focal_loss.py",
+        "path_type": "hardlink",
+        "sha256": "af0bc98d01e2cf68c188cb283e57fd91bd0e4e926d40ac0f9bb36b6806045a27",
+        "sha256_in_prefix": "af0bc98d01e2cf68c188cb283e57fd91bd0e4e926d40ac0f9bb36b6806045a27",
+        "size_in_bytes": 3475
+      },
+      {
+        "_path": "site-packages/fvcore/nn/giou_loss.py",
+        "path_type": "hardlink",
+        "sha256": "3b1aff39f620474f62dffd6f8b4bde5b4b5684d145bc6f604338c8d7080832e4",
+        "sha256_in_prefix": "3b1aff39f620474f62dffd6f8b4bde5b4b5684d145bc6f604338c8d7080832e4",
+        "size_in_bytes": 2042
+      },
+      {
+        "_path": "site-packages/fvcore/nn/jit_analysis.py",
+        "path_type": "hardlink",
+        "sha256": "110f30463ba9f20a86dc1f7a447bed29fe6d55dfedff4a30e05e955e47cacb31",
+        "sha256_in_prefix": "110f30463ba9f20a86dc1f7a447bed29fe6d55dfedff4a30e05e955e47cacb31",
+        "size_in_bytes": 24496
+      },
+      {
+        "_path": "site-packages/fvcore/nn/jit_handles.py",
+        "path_type": "hardlink",
+        "sha256": "ef3a1d20ccad504bfdab7d2a127bce9483de1125d170d915d22f4addbc36c129",
+        "sha256_in_prefix": "ef3a1d20ccad504bfdab7d2a127bce9483de1125d170d915d22f4addbc36c129",
+        "size_in_bytes": 9472
+      },
+      {
+        "_path": "site-packages/fvcore/nn/parameter_count.py",
+        "path_type": "hardlink",
+        "sha256": "637967dde319020ef06d0151911a99e775790a2f423b376caf22e7c19de66994",
+        "sha256_in_prefix": "637967dde319020ef06d0151911a99e775790a2f423b376caf22e7c19de66994",
+        "size_in_bytes": 4891
+      },
+      {
+        "_path": "site-packages/fvcore/nn/precise_bn.py",
+        "path_type": "hardlink",
+        "sha256": "7ce839719d8e1fe7a464711df6eaa3d9be051f9fa43e17a6b5eaecf55ea19629",
+        "sha256_in_prefix": "7ce839719d8e1fe7a464711df6eaa3d9be051f9fa43e17a6b5eaecf55ea19629",
+        "size_in_bytes": 8003
+      },
+      {
+        "_path": "site-packages/fvcore/nn/print_model_statistics.py",
+        "path_type": "hardlink",
+        "sha256": "137f87fb2bd04adc6f57cef8153f21213e0bf25c9db320d092bb0f9096c67390",
+        "sha256_in_prefix": "137f87fb2bd04adc6f57cef8153f21213e0bf25c9db320d092bb0f9096c67390",
+        "size_in_bytes": 25754
+      },
+      {
+        "_path": "site-packages/fvcore/nn/smooth_l1_loss.py",
+        "path_type": "hardlink",
+        "sha256": "490c663c51b81640aa7159c71b44bf0c16a2d75cfaf4d598a8d35f15a50d1c88",
+        "sha256_in_prefix": "490c663c51b81640aa7159c71b44bf0c16a2d75cfaf4d598a8d35f15a50d1c88",
+        "size_in_bytes": 3039
+      },
+      {
+        "_path": "site-packages/fvcore/nn/squeeze_excitation.py",
+        "path_type": "hardlink",
+        "sha256": "9f82ba7fa1447cba7818460579743a6e62c2973041b40a0a5807f60fa2b8d19e",
+        "sha256_in_prefix": "9f82ba7fa1447cba7818460579743a6e62c2973041b40a0a5807f60fa2b8d19e",
+        "size_in_bytes": 5721
+      },
+      {
+        "_path": "site-packages/fvcore/nn/weight_init.py",
+        "path_type": "hardlink",
+        "sha256": "5e3d67978e93a9835ad215a772ae8a3e0e378f3a058c122a729d0091cb519325",
+        "sha256_in_prefix": "5e3d67978e93a9835ad215a772ae8a3e0e378f3a058c122a729d0091cb519325",
+        "size_in_bytes": 1359
+      },
+      {
+        "_path": "site-packages/fvcore/transforms/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fc2409ebd2bcc7830d7d9db1da8a046331769df72fee033b9f7c0240ad915ed1",
+        "sha256_in_prefix": "fc2409ebd2bcc7830d7d9db1da8a046331769df72fee033b9f7c0240ad915ed1",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "site-packages/fvcore/transforms/transform.py",
+        "path_type": "hardlink",
+        "sha256": "fa1c26d6b1a03efd302c7d686b4334b840e60fc91ccd2719b1910d8f9385bebe",
+        "sha256_in_prefix": "fa1c26d6b1a03efd302c7d686b4334b840e60fc91ccd2719b1910d8f9385bebe",
+        "size_in_bytes": 29569
+      },
+      {
+        "_path": "site-packages/fvcore/transforms/transform_util.py",
+        "path_type": "hardlink",
+        "sha256": "8813082008a254cb391d3490cdd337b4e58901ca848541a97880306f36133bb0",
+        "sha256_in_prefix": "8813082008a254cb391d3490cdd337b4e58901ca848541a97880306f36133bb0",
+        "size_in_bytes": 3307
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/benchmark.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/checkpoint.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/config.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/download.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/file_io.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/history_buffer.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/param_scheduler.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/registry.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/common/__pycache__/timer.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/activation_count.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/distributed.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/flop_count.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/focal_loss.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/giou_loss.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/jit_analysis.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/jit_handles.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/parameter_count.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/precise_bn.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/print_model_statistics.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/smooth_l1_loss.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/squeeze_excitation.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/nn/__pycache__/weight_init.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/transforms/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/transforms/__pycache__/transform.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/fvcore/transforms/__pycache__/transform_util.cpython-311.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "fvcore",
+  "sha256": "642838ed0ef162ff3ae5817971b5cb5d452c73d655bfa384adecb8f268619e01",
+  "size": 60175,
+  "subdir": "noarch",
+  "timestamp": 1671623775000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/fvcore-0.1.5.post20221221-pyhd8ed1ab_0.conda",
+  "version": "0.1.5.post20221221"
+}

@@ -1,0 +1,132 @@
+{
+  "build": "pyh29332c3_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "python",
+    "pyyaml",
+    "python >=3.9"
+  ],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/yacs-0.1.8-pyh29332c3_2",
+  "files": [
+    "lib/python3.11/site-packages/yacs/__init__.py",
+    "lib/python3.11/site-packages/yacs/config.py",
+    "lib/python3.11/site-packages/yacs/tests.py",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/METADATA",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/RECORD",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/WHEEL",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/yacs-0.1.8.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/yacs/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/yacs/__pycache__/config.cpython-311.pyc",
+    "lib/python3.11/site-packages/yacs/__pycache__/tests.cpython-311.pyc"
+  ],
+  "fn": "yacs-0.1.8-pyh29332c3_2.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/yacs-0.1.8-pyh29332c3_2",
+    "type": 1
+  },
+  "md5": "5a30f948ad38eb0edd8bd6ef2522a742",
+  "name": "yacs",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/yacs-0.1.8-pyh29332c3_2.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/yacs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/yacs/config.py",
+        "path_type": "hardlink",
+        "sha256": "6d491fea3cba4030698b08ed93440db75b3ce65858300577133b13b095394b6a",
+        "sha256_in_prefix": "6d491fea3cba4030698b08ed93440db75b3ce65858300577133b13b095394b6a",
+        "size_in_bytes": 20505
+      },
+      {
+        "_path": "site-packages/yacs/tests.py",
+        "path_type": "hardlink",
+        "sha256": "8943615a3545c953322a0b3608cb4ececcef26962cd85f296ceaafd39be74e24",
+        "sha256_in_prefix": "8943615a3545c953322a0b3608cb4ececcef26962cd85f296ceaafd39be74e24",
+        "size_in_bytes": 10557
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "85ad2e0cc7e3acca02d3a9099e7f16009ad42d7b951b4fe7c17ec95b7f0fccd1",
+        "sha256_in_prefix": "85ad2e0cc7e3acca02d3a9099e7f16009ad42d7b951b4fe7c17ec95b7f0fccd1",
+        "size_in_bytes": 740
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2247e9c78361ecc197ea965e577e1059e5601b30707ef8c9bdbb91853a0f3cbe",
+        "sha256_in_prefix": "2247e9c78361ecc197ea965e577e1059e5601b30707ef8c9bdbb91853a0f3cbe",
+        "size_in_bytes": 894
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef",
+        "sha256_in_prefix": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "370d26c449d05c170884d75f3c66cf9ea121d6b6fbeed235e3418c899a6ccf06",
+        "sha256_in_prefix": "370d26c449d05c170884d75f3c66cf9ea121d6b6fbeed235e3418c899a6ccf06",
+        "size_in_bytes": 115
+      },
+      {
+        "_path": "site-packages/yacs-0.1.8.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c04d65f4b577382fc541743d77bada10cbd331f71a465ebb3cdfaf9f332d29b9",
+        "sha256_in_prefix": "c04d65f4b577382fc541743d77bada10cbd331f71a465ebb3cdfaf9f332d29b9",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.11/site-packages/yacs/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/yacs/__pycache__/config.cpython-311.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.11/site-packages/yacs/__pycache__/tests.cpython-311.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d0ca7362561051750a503cec3eaffe1857a871840ddeeccd8fd88c2aef71ca80",
+  "size": 20032,
+  "subdir": "noarch",
+  "timestamp": 1737043264000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/yacs-0.1.8-pyh29332c3_2.conda",
+  "version": "0.1.8"
+}

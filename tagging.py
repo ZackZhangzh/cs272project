@@ -81,4 +81,7 @@ def tagging_and_grouping(
 
 
 if __name__ == "__main__":
-    grouped = tagging_and_grouping("your/image/folder", save_csv="output.csv")
+    grouped = tagging_and_grouping(
+        "/home/zhihao/cs272project/Gradio/examples/photos", save_csv="output.csv"
+    )
+    print("Grouped images by labels:", grouped)

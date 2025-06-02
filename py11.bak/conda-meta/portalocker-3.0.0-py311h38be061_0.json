@@ -1,0 +1,250 @@
+{
+  "build": "py311h38be061_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "python_abi 3.11.* *_cp311",
+    "python >=3.11,<3.12.0a0"
+  ],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/portalocker-3.0.0-py311h38be061_0",
+  "files": [
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/LICENSE",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/METADATA",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/RECORD",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/WHEEL",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/portalocker/__about__.py",
+    "lib/python3.11/site-packages/portalocker/__init__.py",
+    "lib/python3.11/site-packages/portalocker/__main__.py",
+    "lib/python3.11/site-packages/portalocker/__pycache__/__about__.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/__init__.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/__main__.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/constants.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/exceptions.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/portalocker.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/redis.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/types.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/__pycache__/utils.cpython-311.pyc",
+    "lib/python3.11/site-packages/portalocker/constants.py",
+    "lib/python3.11/site-packages/portalocker/exceptions.py",
+    "lib/python3.11/site-packages/portalocker/portalocker.py",
+    "lib/python3.11/site-packages/portalocker/py.typed",
+    "lib/python3.11/site-packages/portalocker/redis.py",
+    "lib/python3.11/site-packages/portalocker/types.py",
+    "lib/python3.11/site-packages/portalocker/utils.py"
+  ],
+  "fn": "portalocker-3.0.0-py311h38be061_0.conda",
+  "license": "PSF-2.0",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/portalocker-3.0.0-py311h38be061_0",
+    "type": 1
+  },
+  "md5": "1353aad8d8fb0eb47932ce731aeee8b6",
+  "name": "portalocker",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/portalocker-3.0.0-py311h38be061_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a50570fa3b3102a42d7babb0569238b0b3c0aedce0063c8e4d65060dfd3f7293",
+        "sha256_in_prefix": "a50570fa3b3102a42d7babb0569238b0b3c0aedce0063c8e4d65060dfd3f7293",
+        "size_in_bytes": 1460
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "bc0e98af6f4825b9b6988ec8254823281ce5e6c9b87e233706e51c0dbe1eb901",
+        "sha256_in_prefix": "bc0e98af6f4825b9b6988ec8254823281ce5e6c9b87e233706e51c0dbe1eb901",
+        "size_in_bytes": 8509
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e5a0023e38228dffc7efa7978565eeae523b51133656a7eb85f6672f58fd6355",
+        "sha256_in_prefix": "e5a0023e38228dffc7efa7978565eeae523b51133656a7eb85f6672f58fd6355",
+        "size_in_bytes": 1962
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "474e8f0375156074e1c07bf1b9158ca9a19cafe3ee9e25da8708e641114c1246",
+        "sha256_in_prefix": "474e8f0375156074e1c07bf1b9158ca9a19cafe3ee9e25da8708e641114c1246",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9ca0a0d067a695311efe643475ee791e69266d91e21973f25ff752ee5a40eeba",
+        "sha256_in_prefix": "9ca0a0d067a695311efe643475ee791e69266d91e21973f25ff752ee5a40eeba",
+        "size_in_bytes": 107
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker-3.0.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a9f204c16d97f1c82d0f4705248216691f9c9ca368e04491ed16a2c317fe50d0",
+        "sha256_in_prefix": "a9f204c16d97f1c82d0f4705248216691f9c9ca368e04491ed16a2c317fe50d0",
+        "size_in_bytes": 12
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__about__.py",
+        "path_type": "hardlink",
+        "sha256": "fffcd1881acd4320843f6b2bf1f56274b8ac63514d01da0f65f9abc44e133d48",
+        "sha256_in_prefix": "fffcd1881acd4320843f6b2bf1f56274b8ac63514d01da0f65f9abc44e133d48",
+        "size_in_bytes": 230
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "421349be166de8c8b669fad88740d4f64ae1b181db11493d19ed8bc5cd7e273a",
+        "sha256_in_prefix": "421349be166de8c8b669fad88740d4f64ae1b181db11493d19ed8bc5cd7e273a",
+        "size_in_bytes": 2055
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "63cb4eb1e75d9ae26954208d8a349a308cce194572efa04d364cf13549ff4631",
+        "sha256_in_prefix": "63cb4eb1e75d9ae26954208d8a349a308cce194572efa04d364cf13549ff4631",
+        "size_in_bytes": 3666
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/__about__.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "2d948625a01dfe26906ae353eb6bf0c500e76a567abc41b8af1172edf86f13df",
+        "sha256_in_prefix": "2d948625a01dfe26906ae353eb6bf0c500e76a567abc41b8af1172edf86f13df",
+        "size_in_bytes": 422
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "4de7c45cb368852dc68978496634775843013c4597162825a96c6db986a112fe",
+        "sha256_in_prefix": "4de7c45cb368852dc68978496634775843013c4597162825a96c6db986a112fe",
+        "size_in_bytes": 1532
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/__main__.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "3320b4172c69c30fa412df7b26f7ac781c963ef466ad1250ccd1ea2be579aa58",
+        "sha256_in_prefix": "3320b4172c69c30fa412df7b26f7ac781c963ef466ad1250ccd1ea2be579aa58",
+        "size_in_bytes": 6265
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/constants.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "8dd59bb5a95f0086f41787ea2cb0d179e3b24f2e5b8ce6cda9a0f5d46f599b4c",
+        "sha256_in_prefix": "8dd59bb5a95f0086f41787ea2cb0d179e3b24f2e5b8ce6cda9a0f5d46f599b4c",
+        "size_in_bytes": 1218
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/exceptions.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "b382347eb02538894a94365b1c33fb3fbdc1e47c25fc36eda1fa0781f692ad4a",
+        "sha256_in_prefix": "b382347eb02538894a94365b1c33fb3fbdc1e47c25fc36eda1fa0781f692ad4a",
+        "size_in_bytes": 1579
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/portalocker.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0e7281dacc3e32a85c8f8ecafb09ae3b963e525bbe91e1a81b13213e8f87d18",
+        "sha256_in_prefix": "a0e7281dacc3e32a85c8f8ecafb09ae3b963e525bbe91e1a81b13213e8f87d18",
+        "size_in_bytes": 5822
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/redis.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "5fc448eb9190b76f306857b3f297459bc223d36fc4e861252b092d3965f4758a",
+        "sha256_in_prefix": "5fc448eb9190b76f306857b3f297459bc223d36fc4e861252b092d3965f4758a",
+        "size_in_bytes": 11181
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/types.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "01f0c7e74285cc01d83c8fdf2bd4978cb13e1024208bf533365f59ce9e06b170",
+        "sha256_in_prefix": "01f0c7e74285cc01d83c8fdf2bd4978cb13e1024208bf533365f59ce9e06b170",
+        "size_in_bytes": 1583
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/__pycache__/utils.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "a6379699de8a900a20a621acb745d96997953042e72c5ef3089dbd735598b0fb",
+        "sha256_in_prefix": "a6379699de8a900a20a621acb745d96997953042e72c5ef3089dbd735598b0fb",
+        "size_in_bytes": 25099
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/constants.py",
+        "path_type": "hardlink",
+        "sha256": "d60cd31c391e353da501e8f5c12685cfdbd594e7da299c90d9d38e7c0e6a7b26",
+        "sha256_in_prefix": "d60cd31c391e353da501e8f5c12685cfdbd594e7da299c90d9d38e7c0e6a7b26",
+        "size_in_bytes": 1131
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "20d175a25f05be811a9f68659e5957cafda6b6b9232adea509d8fde856679551",
+        "sha256_in_prefix": "20d175a25f05be811a9f68659e5957cafda6b6b9232adea509d8fde856679551",
+        "size_in_bytes": 499
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/portalocker.py",
+        "path_type": "hardlink",
+        "sha256": "cf20b46c3a04a0d7b1480794f24f9a54aa298c1eef0feb4b2fb83828546e9655",
+        "sha256_in_prefix": "cf20b46c3a04a0d7b1480794f24f9a54aa298c1eef0feb4b2fb83828546e9655",
+        "size_in_bytes": 5599
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/redis.py",
+        "path_type": "hardlink",
+        "sha256": "ac7f9665679ba15d1c273ab6f76c2f96122d21bed8b5113c2e963534e37ebe87",
+        "sha256_in_prefix": "ac7f9665679ba15d1c273ab6f76c2f96122d21bed8b5113c2e963534e37ebe87",
+        "size_in_bytes": 8636
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/types.py",
+        "path_type": "hardlink",
+        "sha256": "603aea90bb5909e838a5938c3386ffe7f67cd629e2be407c2d96af4fbd08fc21",
+        "sha256_in_prefix": "603aea90bb5909e838a5938c3386ffe7f67cd629e2be407c2d96af4fbd08fc21",
+        "size_in_bytes": 1687
+      },
+      {
+        "_path": "lib/python3.11/site-packages/portalocker/utils.py",
+        "path_type": "hardlink",
+        "sha256": "1416dd3a7437e568a76974f092d0890ddd2039cf0e0c32acdb56950c99787e95",
+        "sha256_in_prefix": "1416dd3a7437e568a76974f092d0890ddd2039cf0e0c32acdb56950c99787e95",
+        "size_in_bytes": 18165
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c17fa49e9dc7b118cd5ffb7ba49b91e148b5d1a1373f22413ccab7323f69b1ea",
+  "size": 47027,
+  "subdir": "linux-64",
+  "timestamp": 1731964191000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/portalocker-3.0.0-py311h38be061_0.conda",
+  "version": "3.0.0"
+}

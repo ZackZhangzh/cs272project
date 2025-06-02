@@ -1,0 +1,122 @@
+{
+  "build": "py311h7366164_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=12",
+    "libstdcxx-ng >=12",
+    "python_abi 3.11.* *_cp311",
+    "python >=3.11,<3.12.0a0",
+    "liblapack >=3.9.0,<4.0a0",
+    "libcblas >=3.9.0,<4.0a0",
+    "numpy >=1.23.5,<2.0a0",
+    "libpng >=1.6.39,<1.7.0a0",
+    "jpeg >=9e,<10a",
+    "libsqlite >=3.40.0,<4.0a0"
+  ],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/dlib-19.24.0-py311h7366164_3",
+  "files": [
+    "lib/python3.11/site-packages/_dlib_pybind11.cpython-311-x86_64-linux-gnu.so",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/INSTALLER",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/METADATA",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/RECORD",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/REQUESTED",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/WHEEL",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/direct_url.json",
+    "lib/python3.11/site-packages/dlib-19.24.0.dist-info/top_level.txt",
+    "lib/python3.11/site-packages/dlib/__init__.py",
+    "lib/python3.11/site-packages/dlib/__pycache__/__init__.cpython-311.pyc"
+  ],
+  "fn": "dlib-19.24.0-py311h7366164_3.tar.bz2",
+  "license": "BSL-1.0",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/dlib-19.24.0-py311h7366164_3",
+    "type": 1
+  },
+  "md5": "6db2273efb46d87e673fcd079470ca29",
+  "name": "dlib",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/dlib-19.24.0-py311h7366164_3.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.11/site-packages/_dlib_pybind11.cpython-311-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "36274d45476a45a1eb97b38476cc84de0fb70fe05d207ba1e833091769b05c63",
+        "sha256_in_prefix": "36274d45476a45a1eb97b38476cc84de0fb70fe05d207ba1e833091769b05c63",
+        "size_in_bytes": 9480400
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "0550b06886b1b1793154b284d5d11b4005268e94a784a8a165e508da3da22db2",
+        "sha256_in_prefix": "0550b06886b1b1793154b284d5d11b4005268e94a784a8a165e508da3da22db2",
+        "size_in_bytes": 1382
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fc0234297605c71b7dc1bf4c87ac7df74ebb0ea94a4ab8a58b9ab5127b2bdb6d",
+        "sha256_in_prefix": "fc0234297605c71b7dc1bf4c87ac7df74ebb0ea94a4ab8a58b9ab5127b2bdb6d",
+        "size_in_bytes": 793
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c02a475393eb2c635da68f996823ad13ab5ed327002b6a18bc999324250a9d44",
+        "sha256_in_prefix": "c02a475393eb2c635da68f996823ad13ab5ed327002b6a18bc999324250a9d44",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "90aa8b1f873060a256e82e470d79ad314176fd8eb47a5a905dc34f93d0798f99",
+        "sha256_in_prefix": "90aa8b1f873060a256e82e470d79ad314176fd8eb47a5a905dc34f93d0798f99",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib-19.24.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6253d314615256f2f3f35a7a1d80cdab14d4af759ee8d0883a88a0be60449407",
+        "sha256_in_prefix": "6253d314615256f2f3f35a7a1d80cdab14d4af759ee8d0883a88a0be60449407",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cb9e6acd89129dd5bc9fbbf17f4f0abbc7b09d52103be1677bdbda895e558b9e",
+        "sha256_in_prefix": "cb9e6acd89129dd5bc9fbbf17f4f0abbc7b09d52103be1677bdbda895e558b9e",
+        "size_in_bytes": 775
+      },
+      {
+        "_path": "lib/python3.11/site-packages/dlib/__pycache__/__init__.cpython-311.pyc",
+        "path_type": "hardlink",
+        "sha256": "b78397a39428b41da61bc816b2b79edff8c119e13abf9623acbc6de393451882",
+        "sha256_in_prefix": "b78397a39428b41da61bc816b2b79edff8c119e13abf9623acbc6de393451882",
+        "size_in_bytes": 1238
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "dlib",
+  "sha256": "ff1f9adbeb596c0f8677781bacaef8bd09d698944f38cd9c28ac9d42b6db4510",
+  "size": 4193479,
+  "subdir": "linux-64",
+  "timestamp": 1670031754000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/dlib-19.24.0-py311h7366164_3.tar.bz2",
+  "version": "19.24.0"
+}

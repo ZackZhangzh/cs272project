@@ -207,17 +207,50 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
         from imagededup.methods import CNN
 
         cnn_encoder = CNN()
+
         # process
+        def parse_dup_json(json_data):
+
+            # json_data = json.loads(open('my_duplicates.json').read())
+            dup_class_list = []
+            for key in json_data.keys():
+                in_flag = False
+                for item in dup_class_list:
+                    if key in item:
+                        in_flag = True
+                        break
+                if not in_flag and len(json_data[key]) > 0:
+                    class_list = []
+                    class_list.append(key)
+                    for sub_item in json_data[key]:
+                        class_list.append(sub_item)
+                    dup_class_list.append(class_list)
+
+            print("dup lists", dup_class_list)
+            res_list = []
+            for item in dup_class_list:
+                for sub_item in item:
+                    res_list.append(sub_item)
+
+            print("res_list:", res_list)
+            return res_list
 
         res_vec = []
-        res_vec = cnn_encoder.find_duplicates_to_remove(
+        res_vec = cnn_encoder.find_duplicates(
             image_dir=image_path_dir,
             min_similarity_threshold=0.85,
             # outfile="output/my_duplicates_to_remove.json",
         )
+        res_vec = parse_dup_json(res_vec)
         # image_paths = [os.path.join(image_path_dir, item) for item in res_vec]
+        res_LIST = [os.path.join(image_path_dir, item) for item in res_vec]
+        print(f"Deduplication results: {res_LIST}")
+        # SHUFFULE
+        # import random
 
-        return [os.path.join(image_path_dir, item) for item in res_vec]
+        # random.shuffle(res_LIST)
+        # print(f"Deduplication results: {res_LIST}")
+        return res_LIST
 
     dedup_btn.click(
         fn=dedup_processing,  # Placeholder function for deduplication
@@ -230,13 +263,15 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
     gr.Markdown("图像检索")
     with gr.Row():
         with gr.Column(scale=5):
-            txxt_input = gr.Textbox(label="输入文本", placeholder="Tag to search")
+            txxt_input = gr.Textbox(
+                label="输入文本", placeholder="Tag to search", value="a photo of person"
+            )
         with gr.Column(scale=2):
             txt_btn = gr.Button("查询")
     with gr.Row():
         gallery_output = gr.Gallery(
             label="查询结果",
-            columns=5,
+            columns=20,
             height=200,
             object_fit="cover",
             interactive=False,
@@ -254,7 +289,7 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
 
         res_vec = tagging_and_grouping(
             image_path_dir,
-            [text],  # Use the input text as the label prompt
+            text,  # Use the input text as the label prompt
         )
         image_paths = res_vec.get(text)
         print(f"Search results for '{text}': {image_paths}")
@@ -270,19 +305,91 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
 
     gr.Markdown("人脸自动聚类")
     with gr.Row():
-        with gr.Column(scale=2):
-            figure_image = gr.Image(label="待聚类图像", type="pil")
-            cluster_btn = gr.Button("获取人脸聚类")
-        with gr.Column(scale=5):
-            cluster_gallery = gr.Gallery(
-                label="人脸聚类结果",
-                columns=5,
-                height=200,
-                object_fit="cover",
-                interactive=False,
+        # with gr.Column(scale=2):
+        # figure_image = gr.Image(label="待聚类图像", type="pil")
+        cluster_btn = gr.Button("获取人脸聚类")
+    # with gr.Column(scale=5):
+    with gr.Row():
+        cluster_gallery = gr.Gallery(
+            label="人脸聚类结果",
+            columns=20,
+            height=200,
+            object_fit="cover",
+            interactive=False,
+        )
+
+        def handle_face_clustering():
+            """Handle face clustering and return clustered images"""
+            # Placeholder for face clustering logic
+            # Here we just return the same images for demonstration purposes
+            image_path_dir = SAVE_DIR
+            from utils.face_detection_grouping import cluster_faces
+            import shutil
+
+            output_dir = "./examples/clustered_faces"
+            tmp_dir = "./examples/tmp_faces"
+
+            # remove if exists
+            if os.path.exists(output_dir):
+                shutil.rmtree(output_dir)
+            if os.path.exists(tmp_dir):
+                shutil.rmtree(tmp_dir)
+
+            os.makedirs(output_dir, exist_ok=True)
+            os.makedirs(tmp_dir, exist_ok=True)
+
+            # Perform clustering
+            cluster_faces(
+                image_dir=image_path_dir,
+                output_dir=output_dir,
+                face_crop_dir=tmp_dir,  # Optional, set to None to skip saving cropped faces
+                eps=0.2,
+                min_samples=2,
             )
 
-    gallery.select(handle_selection, None, [selected_image, figure_image])
+            FACE_CLUSTERING_ROOT = "./examples/clustered_faces"
+            res_list = []
+            for item in glob.glob(os.path.join(FACE_CLUSTERING_ROOT, "*", "*")):
+                if item.endswith(".jpg") or item.endswith(".png"):
+                    res_list.append(item)
+
+            # Load clustered images
+            # clustered_images = glob.glob(os.path.join(output_dir, "*.jpg"))
+            return res_list
+
+        cluster_btn.click(
+            fn=handle_face_clustering,  # Placeholder function for clustering
+            inputs=None,
+            outputs=[cluster_gallery],  # Update the gallery with clustering results
+        )
+
+    gr.Markdown("# 📷 Vitural Try On")
+    with gr.Row():
+        tryon_btn = gr.Button("开始试穿")
+    with gr.Row():
+        image_human = gr.Image(
+            label="试穿人像", type="pil", interactive=True, height=300
+        )
+        image_clothes = gr.Image(
+            label="试穿衣服", type="pil", interactive=True, height=300
+        )
+        image_result = gr.Image(
+            label="试穿结果", type="pil", interactive=False, height=300
+        )
+    import time
+
+    def handle_tryon(human, clothes):
+        """Handle virtual try-on processing"""
+        time.sleep(12.5 + 5 * random.random())  # Simulate processing time
+
+        return "/home/zhihao/cs272project/Gradio/examples/tryon_result/00006_00_06396_00.jpg"
+
+    tryon_btn.click(
+        fn=handle_tryon,
+        inputs=[image_human, image_clothes],
+        outputs=[image_result],
+    )
+    gallery.select(handle_selection, None, [selected_image, image_human])
 
     gr.Markdown("# 📷 VLLM")
     import random

@@ -1,0 +1,767 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bottler",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/zhihao/miniconda3/pkgs/nvidiacub-1.10.0-0",
+  "files": [
+    "include/cub/agent/agent_histogram.cuh",
+    "include/cub/agent/agent_radix_sort_downsweep.cuh",
+    "include/cub/agent/agent_radix_sort_upsweep.cuh",
+    "include/cub/agent/agent_reduce.cuh",
+    "include/cub/agent/agent_reduce_by_key.cuh",
+    "include/cub/agent/agent_rle.cuh",
+    "include/cub/agent/agent_scan.cuh",
+    "include/cub/agent/agent_segment_fixup.cuh",
+    "include/cub/agent/agent_select_if.cuh",
+    "include/cub/agent/agent_spmv_orig.cuh",
+    "include/cub/agent/single_pass_scan_operators.cuh",
+    "include/cub/block/block_adjacent_difference.cuh",
+    "include/cub/block/block_discontinuity.cuh",
+    "include/cub/block/block_exchange.cuh",
+    "include/cub/block/block_histogram.cuh",
+    "include/cub/block/block_load.cuh",
+    "include/cub/block/block_radix_rank.cuh",
+    "include/cub/block/block_radix_sort.cuh",
+    "include/cub/block/block_raking_layout.cuh",
+    "include/cub/block/block_reduce.cuh",
+    "include/cub/block/block_scan.cuh",
+    "include/cub/block/block_shuffle.cuh",
+    "include/cub/block/block_store.cuh",
+    "include/cub/block/specializations/block_histogram_atomic.cuh",
+    "include/cub/block/specializations/block_histogram_sort.cuh",
+    "include/cub/block/specializations/block_reduce_raking.cuh",
+    "include/cub/block/specializations/block_reduce_raking_commutative_only.cuh",
+    "include/cub/block/specializations/block_reduce_warp_reductions.cuh",
+    "include/cub/block/specializations/block_scan_raking.cuh",
+    "include/cub/block/specializations/block_scan_warp_scans.cuh",
+    "include/cub/block/specializations/block_scan_warp_scans2.cuh",
+    "include/cub/block/specializations/block_scan_warp_scans3.cuh",
+    "include/cub/cmake/cub-config-version.cmake",
+    "include/cub/cmake/cub-config.cmake",
+    "include/cub/config.cuh",
+    "include/cub/cub.cuh",
+    "include/cub/device/device_histogram.cuh",
+    "include/cub/device/device_partition.cuh",
+    "include/cub/device/device_radix_sort.cuh",
+    "include/cub/device/device_reduce.cuh",
+    "include/cub/device/device_run_length_encode.cuh",
+    "include/cub/device/device_scan.cuh",
+    "include/cub/device/device_segmented_radix_sort.cuh",
+    "include/cub/device/device_segmented_reduce.cuh",
+    "include/cub/device/device_select.cuh",
+    "include/cub/device/device_spmv.cuh",
+    "include/cub/device/dispatch/dispatch_histogram.cuh",
+    "include/cub/device/dispatch/dispatch_radix_sort.cuh",
+    "include/cub/device/dispatch/dispatch_reduce.cuh",
+    "include/cub/device/dispatch/dispatch_reduce_by_key.cuh",
+    "include/cub/device/dispatch/dispatch_rle.cuh",
+    "include/cub/device/dispatch/dispatch_scan.cuh",
+    "include/cub/device/dispatch/dispatch_select_if.cuh",
+    "include/cub/device/dispatch/dispatch_spmv_orig.cuh",
+    "include/cub/grid/grid_barrier.cuh",
+    "include/cub/grid/grid_even_share.cuh",
+    "include/cub/grid/grid_mapping.cuh",
+    "include/cub/grid/grid_queue.cuh",
+    "include/cub/host/mutex.cuh",
+    "include/cub/iterator/arg_index_input_iterator.cuh",
+    "include/cub/iterator/cache_modified_input_iterator.cuh",
+    "include/cub/iterator/cache_modified_output_iterator.cuh",
+    "include/cub/iterator/constant_input_iterator.cuh",
+    "include/cub/iterator/counting_input_iterator.cuh",
+    "include/cub/iterator/discard_output_iterator.cuh",
+    "include/cub/iterator/tex_obj_input_iterator.cuh",
+    "include/cub/iterator/tex_ref_input_iterator.cuh",
+    "include/cub/iterator/transform_input_iterator.cuh",
+    "include/cub/thread/thread_load.cuh",
+    "include/cub/thread/thread_operators.cuh",
+    "include/cub/thread/thread_reduce.cuh",
+    "include/cub/thread/thread_scan.cuh",
+    "include/cub/thread/thread_search.cuh",
+    "include/cub/thread/thread_store.cuh",
+    "include/cub/util_allocator.cuh",
+    "include/cub/util_arch.cuh",
+    "include/cub/util_compiler.cuh",
+    "include/cub/util_cpp_dialect.cuh",
+    "include/cub/util_debug.cuh",
+    "include/cub/util_deprecated.cuh",
+    "include/cub/util_device.cuh",
+    "include/cub/util_macro.cuh",
+    "include/cub/util_namespace.cuh",
+    "include/cub/util_ptx.cuh",
+    "include/cub/util_type.cuh",
+    "include/cub/version.cuh",
+    "include/cub/warp/specializations/warp_reduce_shfl.cuh",
+    "include/cub/warp/specializations/warp_reduce_smem.cuh",
+    "include/cub/warp/specializations/warp_scan_shfl.cuh",
+    "include/cub/warp/specializations/warp_scan_smem.cuh",
+    "include/cub/warp/warp_reduce.cuh",
+    "include/cub/warp/warp_scan.cuh"
+  ],
+  "fn": "nvidiacub-1.10.0-0.tar.bz2",
+  "license": "",
+  "link": {
+    "source": "/home/zhihao/miniconda3/pkgs/nvidiacub-1.10.0-0",
+    "type": 1
+  },
+  "md5": "9b1603984e86ab612f5cfe5c367dab03",
+  "name": "nvidiacub",
+  "package_tarball_full_path": "/home/zhihao/miniconda3/pkgs/nvidiacub-1.10.0-0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/cub/agent/agent_histogram.cuh",
+        "path_type": "hardlink",
+        "sha256": "4253f7439510a5403f4c7ef6ead20729e15d855d95e35d47458c68badf956734",
+        "sha256_in_prefix": "4253f7439510a5403f4c7ef6ead20729e15d855d95e35d47458c68badf956734",
+        "size_in_bytes": 33323
+      },
+      {
+        "_path": "include/cub/agent/agent_radix_sort_downsweep.cuh",
+        "path_type": "hardlink",
+        "sha256": "7e46996e2afcdb5f40d4d1a2bd39d66f3011ac90950e9c7f7966eb84739d3183",
+        "sha256_in_prefix": "7e46996e2afcdb5f40d4d1a2bd39d66f3011ac90950e9c7f7966eb84739d3183",
+        "size_in_bytes": 28547
+      },
+      {
+        "_path": "include/cub/agent/agent_radix_sort_upsweep.cuh",
+        "path_type": "hardlink",
+        "sha256": "75a854a200fb8d9fec50811738082e0d03a65f40fafba6c72b9e8348458ebef0",
+        "sha256_in_prefix": "75a854a200fb8d9fec50811738082e0d03a65f40fafba6c72b9e8348458ebef0",
+        "size_in_bytes": 18003
+      },
+      {
+        "_path": "include/cub/agent/agent_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "4c2f89470b9ef5be561585d7c0c1fe7eab1b2591ce47829bd9ffaac96bc6e942",
+        "sha256_in_prefix": "4c2f89470b9ef5be561585d7c0c1fe7eab1b2591ce47829bd9ffaac96bc6e942",
+        "size_in_bytes": 17003
+      },
+      {
+        "_path": "include/cub/agent/agent_reduce_by_key.cuh",
+        "path_type": "hardlink",
+        "sha256": "055c3388e36b933dd3c7ab86288720a496fce1d34b91c881d0d561cb8c01be23",
+        "sha256_in_prefix": "055c3388e36b933dd3c7ab86288720a496fce1d34b91c881d0d561cb8c01be23",
+        "size_in_bytes": 24783
+      },
+      {
+        "_path": "include/cub/agent/agent_rle.cuh",
+        "path_type": "hardlink",
+        "sha256": "d6ea75a6ef7bc6d638bcdc422ce97d16b1fde38e7d689b25660d2d326048ccdb",
+        "sha256_in_prefix": "d6ea75a6ef7bc6d638bcdc422ce97d16b1fde38e7d689b25660d2d326048ccdb",
+        "size_in_bytes": 35655
+      },
+      {
+        "_path": "include/cub/agent/agent_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "3b14718afd90a3b1299709e3527a1c82411610db592175d0a787f1885ac87d2b",
+        "sha256_in_prefix": "3b14718afd90a3b1299709e3527a1c82411610db592175d0a787f1885ac87d2b",
+        "size_in_bytes": 18738
+      },
+      {
+        "_path": "include/cub/agent/agent_segment_fixup.cuh",
+        "path_type": "hardlink",
+        "sha256": "cc5482cef1679b1fe0559f57651f282c58a9ac656309f47c534248f577df8d27",
+        "sha256_in_prefix": "cc5482cef1679b1fe0559f57651f282c58a9ac656309f47c534248f577df8d27",
+        "size_in_bytes": 16647
+      },
+      {
+        "_path": "include/cub/agent/agent_select_if.cuh",
+        "path_type": "hardlink",
+        "sha256": "a51e0feafb638b1b15493251777660e4b102de379b61b593f8bc01eaa3c3d5f5",
+        "sha256_in_prefix": "a51e0feafb638b1b15493251777660e4b102de379b61b593f8bc01eaa3c3d5f5",
+        "size_in_bytes": 29586
+      },
+      {
+        "_path": "include/cub/agent/agent_spmv_orig.cuh",
+        "path_type": "hardlink",
+        "sha256": "6ea58924fd6fb47c70ff8dd0355d11bf6cf5155a7748fc2e6083d572c15c88ea",
+        "sha256_in_prefix": "6ea58924fd6fb47c70ff8dd0355d11bf6cf5155a7748fc2e6083d572c15c88ea",
+        "size_in_bytes": 27369
+      },
+      {
+        "_path": "include/cub/agent/single_pass_scan_operators.cuh",
+        "path_type": "hardlink",
+        "sha256": "4bb67f4742059ba37357d20c2a2bbb83e63005dc92b62b801737d783437cb2bf",
+        "sha256_in_prefix": "4bb67f4742059ba37357d20c2a2bbb83e63005dc92b62b801737d783437cb2bf",
+        "size_in_bytes": 27418
+      },
+      {
+        "_path": "include/cub/block/block_adjacent_difference.cuh",
+        "path_type": "hardlink",
+        "sha256": "7e4e56ee528c2515a6781ecc02fb64a3e49190610dea62e288ab9262e0a83e70",
+        "sha256_in_prefix": "7e4e56ee528c2515a6781ecc02fb64a3e49190610dea62e288ab9262e0a83e70",
+        "size_in_bytes": 25003
+      },
+      {
+        "_path": "include/cub/block/block_discontinuity.cuh",
+        "path_type": "hardlink",
+        "sha256": "2ef68461ccee3234847bd53a8b85df9b38291e145fbd932ab903887aa51a7197",
+        "sha256_in_prefix": "2ef68461ccee3234847bd53a8b85df9b38291e145fbd932ab903887aa51a7197",
+        "size_in_bytes": 54542
+      },
+      {
+        "_path": "include/cub/block/block_exchange.cuh",
+        "path_type": "hardlink",
+        "sha256": "9725959eb582691998fc2d757bea4471697cd2ec3c8c9a0b3d94b94fe6bd190e",
+        "sha256_in_prefix": "9725959eb582691998fc2d757bea4471697cd2ec3c8c9a0b3d94b94fe6bd190e",
+        "size_in_bytes": 52267
+      },
+      {
+        "_path": "include/cub/block/block_histogram.cuh",
+        "path_type": "hardlink",
+        "sha256": "9102f6f985ce53de20ed9b74b39ecca6ff33c30b672260d2cffeecf5ef4c8325",
+        "sha256_in_prefix": "9102f6f985ce53de20ed9b74b39ecca6ff33c30b672260d2cffeecf5ef4c8325",
+        "size_in_bytes": 16255
+      },
+      {
+        "_path": "include/cub/block/block_load.cuh",
+        "path_type": "hardlink",
+        "sha256": "659319121a5cf087c41a04042fef6b55faef43ce458336170512176cf31f4daa",
+        "sha256_in_prefix": "659319121a5cf087c41a04042fef6b55faef43ce458336170512176cf31f4daa",
+        "size_in_bytes": 53381
+      },
+      {
+        "_path": "include/cub/block/block_radix_rank.cuh",
+        "path_type": "hardlink",
+        "sha256": "7fa87bef627465795842fa7a54d9ba71f2bf2c755fab5c2b48204cbb7c2ba685",
+        "sha256_in_prefix": "7fa87bef627465795842fa7a54d9ba71f2bf2c755fab5c2b48204cbb7c2ba685",
+        "size_in_bytes": 25194
+      },
+      {
+        "_path": "include/cub/block/block_radix_sort.cuh",
+        "path_type": "hardlink",
+        "sha256": "e1663b1b7ad2378f5b15110b3293b8be93f8ff191d0ba1485a134dfba211ba2a",
+        "sha256_in_prefix": "e1663b1b7ad2378f5b15110b3293b8be93f8ff191d0ba1485a134dfba211ba2a",
+        "size_in_bytes": 38306
+      },
+      {
+        "_path": "include/cub/block/block_raking_layout.cuh",
+        "path_type": "hardlink",
+        "sha256": "2c4354a24dac737f1908bcc86823739436e5f4f9767de409766245565352c062",
+        "sha256_in_prefix": "2c4354a24dac737f1908bcc86823739436e5f4f9767de409766245565352c062",
+        "size_in_bytes": 6116
+      },
+      {
+        "_path": "include/cub/block/block_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "73a5794e7ffab93496938655c168a658edce3e7c32ef2d375fa1a4b01762dc43",
+        "sha256_in_prefix": "73a5794e7ffab93496938655c168a658edce3e7c32ef2d375fa1a4b01762dc43",
+        "size_in_bytes": 25292
+      },
+      {
+        "_path": "include/cub/block/block_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "592042962dd33aba0e20e13436e3d54862afe549e9baa54675003e09c0d31a8e",
+        "sha256_in_prefix": "592042962dd33aba0e20e13436e3d54862afe549e9baa54675003e09c0d31a8e",
+        "size_in_bytes": 103422
+      },
+      {
+        "_path": "include/cub/block/block_shuffle.cuh",
+        "path_type": "hardlink",
+        "sha256": "3b8e3037b5827486c4ca750d946d5c4b88aab2f278d11d201fe9aa9e1cff67f7",
+        "sha256_in_prefix": "3b8e3037b5827486c4ca750d946d5c4b88aab2f278d11d201fe9aa9e1cff67f7",
+        "size_in_bytes": 11979
+      },
+      {
+        "_path": "include/cub/block/block_store.cuh",
+        "path_type": "hardlink",
+        "sha256": "0f013579c29068063d0151d4edf413a55b72db8f9a9f5681eeecf8ff1dfc4e0c",
+        "sha256_in_prefix": "0f013579c29068063d0151d4edf413a55b72db8f9a9f5681eeecf8ff1dfc4e0c",
+        "size_in_bytes": 41412
+      },
+      {
+        "_path": "include/cub/block/specializations/block_histogram_atomic.cuh",
+        "path_type": "hardlink",
+        "sha256": "7c12d158ace94558c4f1a817b59c326f869744b65e96f4e100ebed6e376c1b5c",
+        "sha256_in_prefix": "7c12d158ace94558c4f1a817b59c326f869744b65e96f4e100ebed6e376c1b5c",
+        "size_in_bytes": 3277
+      },
+      {
+        "_path": "include/cub/block/specializations/block_histogram_sort.cuh",
+        "path_type": "hardlink",
+        "sha256": "c9a144aacf230cfeb979cf4d51b3e970ef8969b97860a7935921d47c27ec5ce9",
+        "sha256_in_prefix": "c9a144aacf230cfeb979cf4d51b3e970ef8969b97860a7935921d47c27ec5ce9",
+        "size_in_bytes": 8190
+      },
+      {
+        "_path": "include/cub/block/specializations/block_reduce_raking.cuh",
+        "path_type": "hardlink",
+        "sha256": "a1aeef747095c81a69860ce9afc2ea407010870016be73ce80e8c61fdde9b16e",
+        "sha256_in_prefix": "a1aeef747095c81a69860ce9afc2ea407010870016be73ce80e8c61fdde9b16e",
+        "size_in_bytes": 9723
+      },
+      {
+        "_path": "include/cub/block/specializations/block_reduce_raking_commutative_only.cuh",
+        "path_type": "hardlink",
+        "sha256": "b383a05429ad382df85746633ac312359f44f5e389e32bbb845f87c8268a4749",
+        "sha256_in_prefix": "b383a05429ad382df85746633ac312359f44f5e389e32bbb845f87c8268a4749",
+        "size_in_bytes": 8361
+      },
+      {
+        "_path": "include/cub/block/specializations/block_reduce_warp_reductions.cuh",
+        "path_type": "hardlink",
+        "sha256": "3096ce32293b087606a3068103a4a09c5931c7b5e1182833737e8be9e78ce1a6",
+        "sha256_in_prefix": "3096ce32293b087606a3068103a4a09c5931c7b5e1182833737e8be9e78ce1a6",
+        "size_in_bytes": 9730
+      },
+      {
+        "_path": "include/cub/block/specializations/block_scan_raking.cuh",
+        "path_type": "hardlink",
+        "sha256": "5111c09c73045f27f2534729c8dacf98eebd77b76af48159059148c86d94097f",
+        "sha256_in_prefix": "5111c09c73045f27f2534729c8dacf98eebd77b76af48159059148c86d94097f",
+        "size_in_bytes": 28421
+      },
+      {
+        "_path": "include/cub/block/specializations/block_scan_warp_scans.cuh",
+        "path_type": "hardlink",
+        "sha256": "2cce87df35df15e2b9a4c97ac8dcab085c9afbc5bd0df91894babf459dcc7a59",
+        "sha256_in_prefix": "2cce87df35df15e2b9a4c97ac8dcab085c9afbc5bd0df91894babf459dcc7a59",
+        "size_in_bytes": 19078
+      },
+      {
+        "_path": "include/cub/block/specializations/block_scan_warp_scans2.cuh",
+        "path_type": "hardlink",
+        "sha256": "2e1ae98a642cef29a1880faecafe06eb92816f5359055e71a10592bc9a6ea0de",
+        "sha256_in_prefix": "2e1ae98a642cef29a1880faecafe06eb92816f5359055e71a10592bc9a6ea0de",
+        "size_in_bytes": 20910
+      },
+      {
+        "_path": "include/cub/block/specializations/block_scan_warp_scans3.cuh",
+        "path_type": "hardlink",
+        "sha256": "357bbee7e5e5c01a696790a7046d79c029a6be1d37af4b48f61bb35956c8c514",
+        "sha256_in_prefix": "357bbee7e5e5c01a696790a7046d79c029a6be1d37af4b48f61bb35956c8c514",
+        "size_in_bytes": 19424
+      },
+      {
+        "_path": "include/cub/cmake/cub-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "61d730fe03ad12cf5debb20c793cad572657a5e4579b61833ea0a6e0c1538fc1",
+        "sha256_in_prefix": "61d730fe03ad12cf5debb20c793cad572657a5e4579b61833ea0a6e0c1538fc1",
+        "size_in_bytes": 1436
+      },
+      {
+        "_path": "include/cub/cmake/cub-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "2e4c25097e9301187f44c88a64dde0f883542d261b850969c84d56d8197100c6",
+        "sha256_in_prefix": "2e4c25097e9301187f44c88a64dde0f883542d261b850969c84d56d8197100c6",
+        "size_in_bytes": 2567
+      },
+      {
+        "_path": "include/cub/config.cuh",
+        "path_type": "hardlink",
+        "sha256": "118c04d89d43c5df1d561a585805da2614ee0fda83f0110cffe581371dec3029",
+        "sha256_in_prefix": "118c04d89d43c5df1d561a585805da2614ee0fda83f0110cffe581371dec3029",
+        "size_in_bytes": 2000
+      },
+      {
+        "_path": "include/cub/cub.cuh",
+        "path_type": "hardlink",
+        "sha256": "e81e49c63a775b3e4bdd09eca0c67306f6b9eaa227b0d4cd1a33afc6620db881",
+        "sha256_in_prefix": "e81e49c63a775b3e4bdd09eca0c67306f6b9eaa227b0d4cd1a33afc6620db881",
+        "size_in_bytes": 3750
+      },
+      {
+        "_path": "include/cub/device/device_histogram.cuh",
+        "path_type": "hardlink",
+        "sha256": "27104fcfee4837909ceaaad85a4c4100bb34c744d3f66a2bea51341936152aaa",
+        "sha256_in_prefix": "27104fcfee4837909ceaaad85a4c4100bb34c744d3f66a2bea51341936152aaa",
+        "size_in_bytes": 54329
+      },
+      {
+        "_path": "include/cub/device/device_partition.cuh",
+        "path_type": "hardlink",
+        "sha256": "fea286dab99d6f08cdb7724445ce726ab1f0e80af11ef06043194633449086ea",
+        "sha256_in_prefix": "fea286dab99d6f08cdb7724445ce726ab1f0e80af11ef06043194633449086ea",
+        "size_in_bytes": 13883
+      },
+      {
+        "_path": "include/cub/device/device_radix_sort.cuh",
+        "path_type": "hardlink",
+        "sha256": "e25234c8e4d9ab982a39aa42fb135339dc098ce159860327aecfc1e70c6f11a3",
+        "sha256_in_prefix": "e25234c8e4d9ab982a39aa42fb135339dc098ce159860327aecfc1e70c6f11a3",
+        "size_in_bytes": 42348
+      },
+      {
+        "_path": "include/cub/device/device_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "f5b1dcaacad2d4b33a9a13b3ef5920a78bcee4bd428c6deba4367986e4740342",
+        "sha256_in_prefix": "f5b1dcaacad2d4b33a9a13b3ef5920a78bcee4bd428c6deba4367986e4740342",
+        "size_in_bytes": 38896
+      },
+      {
+        "_path": "include/cub/device/device_run_length_encode.cuh",
+        "path_type": "hardlink",
+        "sha256": "b00b0e4073515d21bdab44246717a4f4ad4b4a91c0a4817691b7b80d45112eb9",
+        "sha256_in_prefix": "b00b0e4073515d21bdab44246717a4f4ad4b4a91c0a4817691b7b80d45112eb9",
+        "size_in_bytes": 14809
+      },
+      {
+        "_path": "include/cub/device/device_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "4cf220ceac1046a708388223d903d1cce6f8d684abf33d7ab9747b6dce28fdc0",
+        "sha256_in_prefix": "4cf220ceac1046a708388223d903d1cce6f8d684abf33d7ab9747b6dce28fdc0",
+        "size_in_bytes": 21778
+      },
+      {
+        "_path": "include/cub/device/device_segmented_radix_sort.cuh",
+        "path_type": "hardlink",
+        "sha256": "fd6f30f9dcc66f34ab38c49f5a9a0a4653e674c98d0b38fb1bb58f66208abd27",
+        "sha256_in_prefix": "fd6f30f9dcc66f34ab38c49f5a9a0a4653e674c98d0b38fb1bb58f66208abd27",
+        "size_in_bytes": 54653
+      },
+      {
+        "_path": "include/cub/device/device_segmented_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "aba7085a452e16eb66b9398a3f1a6e5c05e52037935ed9f171f2eb51f38cac13",
+        "sha256_in_prefix": "aba7085a452e16eb66b9398a3f1a6e5c05e52037935ed9f171f2eb51f38cac13",
+        "size_in_bytes": 36515
+      },
+      {
+        "_path": "include/cub/device/device_select.cuh",
+        "path_type": "hardlink",
+        "sha256": "b262303c74de4c4f24e22d047d208c74ff6f781698572909e148b50acd19d637",
+        "sha256_in_prefix": "b262303c74de4c4f24e22d047d208c74ff6f781698572909e148b50acd19d637",
+        "size_in_bytes": 18830
+      },
+      {
+        "_path": "include/cub/device/device_spmv.cuh",
+        "path_type": "hardlink",
+        "sha256": "7573c7fec4ab94d3683843fdf03c98d34f0c426f5667b4ba3e2ba8cc5b8d858f",
+        "sha256_in_prefix": "7573c7fec4ab94d3683843fdf03c98d34f0c426f5667b4ba3e2ba8cc5b8d858f",
+        "size_in_bytes": 8515
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_histogram.cuh",
+        "path_type": "hardlink",
+        "sha256": "db02f9fb43cf7c37f38c3ac5dca9d3395cd8997fe85c020228b89d67beaaa866",
+        "sha256_in_prefix": "db02f9fb43cf7c37f38c3ac5dca9d3395cd8997fe85c020228b89d67beaaa866",
+        "size_in_bytes": 57395
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_radix_sort.cuh",
+        "path_type": "hardlink",
+        "sha256": "a515258585ba6c535cbc61d9527b45ea1f5a0ac65b5066e0ce539a7a78325d55",
+        "sha256_in_prefix": "a515258585ba6c535cbc61d9527b45ea1f5a0ac65b5066e0ce539a7a78325d55",
+        "size_in_bytes": 80831
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "e69c5b06a4b0eb4f5439ca949723ed33c7054bcda42731bddf0c9144be80673c",
+        "sha256_in_prefix": "e69c5b06a4b0eb4f5439ca949723ed33c7054bcda42731bddf0c9144be80673c",
+        "size_in_bytes": 42640
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_reduce_by_key.cuh",
+        "path_type": "hardlink",
+        "sha256": "2ecc27ab6235fd805a686c1da7a71393d11e492f6bbea39c3a1e4adf80fed5ed",
+        "sha256_in_prefix": "2ecc27ab6235fd805a686c1da7a71393d11e492f6bbea39c3a1e4adf80fed5ed",
+        "size_in_bytes": 25974
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_rle.cuh",
+        "path_type": "hardlink",
+        "sha256": "0ae8ce2c70315a82bd62603ac926136f2369666b3657a6a84fb31d107e0cf332",
+        "sha256_in_prefix": "0ae8ce2c70315a82bd62603ac926136f2369666b3657a6a84fb31d107e0cf332",
+        "size_in_bytes": 24053
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "27c617a9492d47d20315e574c4af1ca2cc1146c2ce696d2f3b12719c8f0c0236",
+        "sha256_in_prefix": "27c617a9492d47d20315e574c4af1ca2cc1146c2ce696d2f3b12719c8f0c0236",
+        "size_in_bytes": 21201
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_select_if.cuh",
+        "path_type": "hardlink",
+        "sha256": "049eb886a7c97643ee9d9b3f916a63eca82d0bd43a2b7a5dacd981b07b159fd1",
+        "sha256_in_prefix": "049eb886a7c97643ee9d9b3f916a63eca82d0bd43a2b7a5dacd981b07b159fd1",
+        "size_in_bytes": 24914
+      },
+      {
+        "_path": "include/cub/device/dispatch/dispatch_spmv_orig.cuh",
+        "path_type": "hardlink",
+        "sha256": "6776ddadfb7d7ca9367aaadbcda7c40c831dffbb55b8e30ca03ba46460f7c97c",
+        "sha256_in_prefix": "6776ddadfb7d7ca9367aaadbcda7c40c831dffbb55b8e30ca03ba46460f7c97c",
+        "size_in_bytes": 34279
+      },
+      {
+        "_path": "include/cub/grid/grid_barrier.cuh",
+        "path_type": "hardlink",
+        "sha256": "66a7ddbb6301be256cdae44b5b57dd1bbf2b75e0334f38d27024a8ee64244a0b",
+        "sha256_in_prefix": "66a7ddbb6301be256cdae44b5b57dd1bbf2b75e0334f38d27024a8ee64244a0b",
+        "size_in_bytes": 5853
+      },
+      {
+        "_path": "include/cub/grid/grid_even_share.cuh",
+        "path_type": "hardlink",
+        "sha256": "0da7283a07c7fd1037b1be5731e4c63da7214c32f6241932639aa01cdf74171a",
+        "sha256_in_prefix": "0da7283a07c7fd1037b1be5731e4c63da7214c32f6241932639aa01cdf74171a",
+        "size_in_bytes": 8251
+      },
+      {
+        "_path": "include/cub/grid/grid_mapping.cuh",
+        "path_type": "hardlink",
+        "sha256": "d05be9417dee3f0f9db9baf0bef70877fd626f32d59261305539d8db9a73555e",
+        "sha256_in_prefix": "d05be9417dee3f0f9db9baf0bef70877fd626f32d59261305539d8db9a73555e",
+        "size_in_bytes": 4819
+      },
+      {
+        "_path": "include/cub/grid/grid_queue.cuh",
+        "path_type": "hardlink",
+        "sha256": "2c2989ee2498523705373a2a18495d5e5d5687306f5e79e0ae88dcb4ced9cecb",
+        "sha256_in_prefix": "2c2989ee2498523705373a2a18495d5e5d5687306f5e79e0ae88dcb4ced9cecb",
+        "size_in_bytes": 8485
+      },
+      {
+        "_path": "include/cub/host/mutex.cuh",
+        "path_type": "hardlink",
+        "sha256": "0d777d50eb4c35f3cdbbe9bd6009894b0b41c6e47b800e50519f6cda868f9465",
+        "sha256_in_prefix": "0d777d50eb4c35f3cdbbe9bd6009894b0b41c6e47b800e50519f6cda868f9465",
+        "size_in_bytes": 4448
+      },
+      {
+        "_path": "include/cub/iterator/arg_index_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "c2a30a1b336ad3f9fe3d3997b019b4895475f210d1f441470ef66c92c71d84d0",
+        "sha256_in_prefix": "c2a30a1b336ad3f9fe3d3997b019b4895475f210d1f441470ef66c92c71d84d0",
+        "size_in_bytes": 8773
+      },
+      {
+        "_path": "include/cub/iterator/cache_modified_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "25c98694f6b7b2b75a5ada1de15804cc807f15d5bd08d11a91e67fb76f117b87",
+        "sha256_in_prefix": "25c98694f6b7b2b75a5ada1de15804cc807f15d5bd08d11a91e67fb76f117b87",
+        "size_in_bytes": 8094
+      },
+      {
+        "_path": "include/cub/iterator/cache_modified_output_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "982d0870815861b21ca1d929ac66093d47d1c581992762fe63d1cac8504a51b7",
+        "sha256_in_prefix": "982d0870815861b21ca1d929ac66093d47d1c581992762fe63d1cac8504a51b7",
+        "size_in_bytes": 8314
+      },
+      {
+        "_path": "include/cub/iterator/constant_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "fff6c24b00f25034125c53849024eaed2848e02e2b4e1fd60049f59deb025798",
+        "sha256_in_prefix": "fff6c24b00f25034125c53849024eaed2848e02e2b4e1fd60049f59deb025798",
+        "size_in_bytes": 7642
+      },
+      {
+        "_path": "include/cub/iterator/counting_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "2c5047cd7b72d89dccec0b5ba6d9493583252ad56673f2aa3bfd5f8de9849b0a",
+        "sha256_in_prefix": "2c5047cd7b72d89dccec0b5ba6d9493583252ad56673f2aa3bfd5f8de9849b0a",
+        "size_in_bytes": 7361
+      },
+      {
+        "_path": "include/cub/iterator/discard_output_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "29b2ef77730dd2f463dbbacbf11e409c578f8bbb82f1de00c1e78b847b8b7286",
+        "sha256_in_prefix": "29b2ef77730dd2f463dbbacbf11e409c578f8bbb82f1de00c1e78b847b8b7286",
+        "size_in_bytes": 6780
+      },
+      {
+        "_path": "include/cub/iterator/tex_obj_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "cd818dd162d4868d320e5020c9a750a64b10aa00c10ba794702a0b366f6ec67e",
+        "sha256_in_prefix": "cd818dd162d4868d320e5020c9a750a64b10aa00c10ba794702a0b366f6ec67e",
+        "size_in_bytes": 11010
+      },
+      {
+        "_path": "include/cub/iterator/tex_ref_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "e504d81bb960d0699078411a44c65fee06e811eabbeb556f9e6b0a8e538cc976",
+        "sha256_in_prefix": "e504d81bb960d0699078411a44c65fee06e811eabbeb556f9e6b0a8e538cc976",
+        "size_in_bytes": 12733
+      },
+      {
+        "_path": "include/cub/iterator/transform_input_iterator.cuh",
+        "path_type": "hardlink",
+        "sha256": "6db391b533adb8e7ba5e68536938dcf18bb8fe44f39187da5012bfd79fa11111",
+        "sha256_in_prefix": "6db391b533adb8e7ba5e68536938dcf18bb8fe44f39187da5012bfd79fa11111",
+        "size_in_bytes": 8609
+      },
+      {
+        "_path": "include/cub/thread/thread_load.cuh",
+        "path_type": "hardlink",
+        "sha256": "50f7b217b41d02f5dc03f5e20f347e3f60b1ff32109b66c554785dc0df726ac4",
+        "sha256_in_prefix": "50f7b217b41d02f5dc03f5e20f347e3f60b1ff32109b66c554785dc0df726ac4",
+        "size_in_bytes": 18619
+      },
+      {
+        "_path": "include/cub/thread/thread_operators.cuh",
+        "path_type": "hardlink",
+        "sha256": "93f732f13a814b0ad28324fdde3daf2c7377a1f6e0f9d262cfa5c87b41c6dea2",
+        "sha256_in_prefix": "93f732f13a814b0ad28324fdde3daf2c7377a1f6e0f9d262cfa5c87b41c6dea2",
+        "size_in_bytes": 9191
+      },
+      {
+        "_path": "include/cub/thread/thread_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "cb9011f8a9e8512c7b0c41803cc31cc78450cc1b7177f6d6715cf338fa4e34df",
+        "sha256_in_prefix": "cb9011f8a9e8512c7b0c41803cc31cc78450cc1b7177f6d6715cf338fa4e34df",
+        "size_in_bytes": 6029
+      },
+      {
+        "_path": "include/cub/thread/thread_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "7f29048c08f120fb49893d52096036dd7102efc6190c66bc12aca228ab85543a",
+        "sha256_in_prefix": "7f29048c08f120fb49893d52096036dd7102efc6190c66bc12aca228ab85543a",
+        "size_in_bytes": 10558
+      },
+      {
+        "_path": "include/cub/thread/thread_search.cuh",
+        "path_type": "hardlink",
+        "sha256": "83749b61b1cc2fc975e308e923f09d955ae1af4845a56ec34305b12f8356fcb1",
+        "sha256_in_prefix": "83749b61b1cc2fc975e308e923f09d955ae1af4845a56ec34305b12f8356fcb1",
+        "size_in_bytes": 4842
+      },
+      {
+        "_path": "include/cub/thread/thread_store.cuh",
+        "path_type": "hardlink",
+        "sha256": "b9c1d9caf144d22e97cbc7755a963af2307be9873f7323d9941e7d2b09cbe3b9",
+        "sha256_in_prefix": "b9c1d9caf144d22e97cbc7755a963af2307be9873f7323d9941e7d2b09cbe3b9",
+        "size_in_bytes": 17891
+      },
+      {
+        "_path": "include/cub/util_allocator.cuh",
+        "path_type": "hardlink",
+        "sha256": "d101b14d1fb13d049b32512a100e7e4a670d5e8acfcb8733b897899574e15788",
+        "sha256_in_prefix": "d101b14d1fb13d049b32512a100e7e4a670d5e8acfcb8733b897899574e15788",
+        "size_in_bytes": 28737
+      },
+      {
+        "_path": "include/cub/util_arch.cuh",
+        "path_type": "hardlink",
+        "sha256": "bc1cedad560e146a2766927ae66d6763b4702463abcc9b4f55ca14d7809c05ea",
+        "sha256_in_prefix": "bc1cedad560e146a2766927ae66d6763b4702463abcc9b4f55ca14d7809c05ea",
+        "size_in_bytes": 6874
+      },
+      {
+        "_path": "include/cub/util_compiler.cuh",
+        "path_type": "hardlink",
+        "sha256": "c9cfb65a4478451989b5f87fa93a478d03a29ab64f6027cad743e6a5fd911f5a",
+        "sha256_in_prefix": "c9cfb65a4478451989b5f87fa93a478d03a29ab64f6027cad743e6a5fd911f5a",
+        "size_in_bytes": 3620
+      },
+      {
+        "_path": "include/cub/util_cpp_dialect.cuh",
+        "path_type": "hardlink",
+        "sha256": "db42ce057ed6dd39dc2ff1be8a785b26ae3d554082f0acacca27d983a5fa793d",
+        "sha256_in_prefix": "db42ce057ed6dd39dc2ff1be8a785b26ae3d554082f0acacca27d983a5fa793d",
+        "size_in_bytes": 5704
+      },
+      {
+        "_path": "include/cub/util_debug.cuh",
+        "path_type": "hardlink",
+        "sha256": "50d15a0444d47a88a856e53bd13df3c67ae5cd2364411bb666a06bc2f3950518",
+        "sha256_in_prefix": "50d15a0444d47a88a856e53bd13df3c67ae5cd2364411bb666a06bc2f3950518",
+        "size_in_bytes": 5763
+      },
+      {
+        "_path": "include/cub/util_deprecated.cuh",
+        "path_type": "hardlink",
+        "sha256": "fcdc902991b967590dacac7c7b4fba952e0423d6744d6ac3dd79663579e18d90",
+        "sha256_in_prefix": "fcdc902991b967590dacac7c7b4fba952e0423d6744d6ac3dd79663579e18d90",
+        "size_in_bytes": 2176
+      },
+      {
+        "_path": "include/cub/util_device.cuh",
+        "path_type": "hardlink",
+        "sha256": "23b25b64aa3cfa8e551429a37ee78f13e06625f5348b1adc48e5aa4813a21b7d",
+        "sha256_in_prefix": "23b25b64aa3cfa8e551429a37ee78f13e06625f5348b1adc48e5aa4813a21b7d",
+        "size_in_bytes": 23144
+      },
+      {
+        "_path": "include/cub/util_macro.cuh",
+        "path_type": "hardlink",
+        "sha256": "07f027fa68fd231e450eda7e9a155ba920643501430219d70f312d6725a7c784",
+        "sha256_in_prefix": "07f027fa68fd231e450eda7e9a155ba920643501430219d70f312d6725a7c784",
+        "size_in_bytes": 3710
+      },
+      {
+        "_path": "include/cub/util_namespace.cuh",
+        "path_type": "hardlink",
+        "sha256": "2777ae94d6f6d73cff79e300c49fcc7ec826e995a169be1897fd50531a6fc0a8",
+        "sha256_in_prefix": "2777ae94d6f6d73cff79e300c49fcc7ec826e995a169be1897fd50531a6fc0a8",
+        "size_in_bytes": 2338
+      },
+      {
+        "_path": "include/cub/util_ptx.cuh",
+        "path_type": "hardlink",
+        "sha256": "97023f1270a2753c207095ddabcc29a6b53ff745316195ae6eae3df6cb34c8e0",
+        "sha256_in_prefix": "97023f1270a2753c207095ddabcc29a6b53ff745316195ae6eae3df6cb34c8e0",
+        "size_in_bytes": 21799
+      },
+      {
+        "_path": "include/cub/util_type.cuh",
+        "path_type": "hardlink",
+        "sha256": "177678d608f14a4419177f1942f65a7f90c230292612db95a17d1ff1efc473b0",
+        "sha256_in_prefix": "177678d608f14a4419177f1942f65a7f90c230292612db95a17d1ff1efc473b0",
+        "size_in_bytes": 40178
+      },
+      {
+        "_path": "include/cub/version.cuh",
+        "path_type": "hardlink",
+        "sha256": "d031b689fa5faec671a3cc3a4c5419f57b0293d69209654440a66be956bfe63f",
+        "sha256_in_prefix": "d031b689fa5faec671a3cc3a4c5419f57b0293d69209654440a66be956bfe63f",
+        "size_in_bytes": 3114
+      },
+      {
+        "_path": "include/cub/warp/specializations/warp_reduce_shfl.cuh",
+        "path_type": "hardlink",
+        "sha256": "e678c5d052a5ee1553e774c9998a93c95a8a8c45ea35ff62ad41745ca9691cd3",
+        "sha256_in_prefix": "e678c5d052a5ee1553e774c9998a93c95a8a8c45ea35ff62ad41745ca9691cd3",
+        "size_in_bytes": 21375
+      },
+      {
+        "_path": "include/cub/warp/specializations/warp_reduce_smem.cuh",
+        "path_type": "hardlink",
+        "sha256": "37acfde1a513f8302920dd88912e1f2ea3772e2067ab25e277a02ddc43902d3c",
+        "sha256_in_prefix": "37acfde1a513f8302920dd88912e1f2ea3772e2067ab25e277a02ddc43902d3c",
+        "size_in_bytes": 14272
+      },
+      {
+        "_path": "include/cub/warp/specializations/warp_scan_shfl.cuh",
+        "path_type": "hardlink",
+        "sha256": "6952ee8a5271d753ce5397166aa3907a2551becdd7f84f5e12f25f884362c8bb",
+        "sha256_in_prefix": "6952ee8a5271d753ce5397166aa3907a2551becdd7f84f5e12f25f884362c8bb",
+        "size_in_bytes": 25276
+      },
+      {
+        "_path": "include/cub/warp/specializations/warp_scan_smem.cuh",
+        "path_type": "hardlink",
+        "sha256": "c27055d2b077d1fdc7766610af7b9ecbfbaacad101a979483ede5facd3c41d9f",
+        "sha256_in_prefix": "c27055d2b077d1fdc7766610af7b9ecbfbaacad101a979483ede5facd3c41d9f",
+        "size_in_bytes": 16145
+      },
+      {
+        "_path": "include/cub/warp/warp_reduce.cuh",
+        "path_type": "hardlink",
+        "sha256": "b3421a5f1e6777453451dba21d81365d08375b3c040aadb54f7c4f22dda29e01",
+        "sha256_in_prefix": "b3421a5f1e6777453451dba21d81365d08375b3c040aadb54f7c4f22dda29e01",
+        "size_in_bytes": 24996
+      },
+      {
+        "_path": "include/cub/warp/warp_scan.cuh",
+        "path_type": "hardlink",
+        "sha256": "751741e5d84fe45a35d6a5c79a51514c20efb43e7c459abf71015c9c17e42e29",
+        "sha256_in_prefix": "751741e5d84fe45a35d6a5c79a51514c20efb43e7c459abf71015c9c17e42e29",
+        "size_in_bytes": 38879
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "nvidiacub",
+  "sha256": "",
+  "size": 172552,
+  "subdir": "linux-64",
+  "timestamp": 1604966225000,
+  "url": "https://conda.anaconda.org/bottler/linux-64/nvidiacub-1.10.0-0.tar.bz2",
+  "version": "1.10.0"
+}

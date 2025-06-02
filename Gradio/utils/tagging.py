@@ -19,7 +19,7 @@ CLIP_PROCESSOR = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 
 def tagging_and_grouping(
-    image_dir: str, LABEL_PROMPTS, save_csv: Optional[str] = None
+    image_dir: str, tag, save_csv: Optional[str] = None
 ) -> Dict[str, List[str]]:
     """
     Tag and group images based on fixed CLIP prompts.
@@ -29,6 +29,28 @@ def tagging_and_grouping(
     Returns:
         Dictionary {label_prompt: [image_path1, image_path2, ...]}
     """
+    LABEL_PROMPTS = [
+        "a photo of a human face",
+        "a photo of a person",
+        "a group photo of people",
+        "a photo of a dog",
+        "a photo of a cat",
+        "a photo of a bird",
+        "a photo of a deer",
+        "a photo of a horse",
+        "a photo of a frog",
+        "a photo of an airplane",
+        "a photo of a car",
+        "a photo of a truck",
+        "a photo of a ship",
+        "a photo of a landscape",
+        "a photo of a tree",
+        "a photo of food",
+        "a photo of a building",
+        "a photo of an indoor object",
+        tag,  # Add the custom tag to the prompts
+    ]
+
     image_paths = sorted(glob(os.path.join(image_dir, "*")))
     grouped = defaultdict(list)
     results = []
@@ -59,16 +81,15 @@ def tagging_and_grouping(
             writer = csv.writer(f)
             writer.writerow(["image", "predicted_label"])
             writer.writerows(results)
+    print("Grouped images by labels:", grouped)
     return grouped
 
 
 if __name__ == "__main__":
-    LABEL_PROMPTS = [
-        "a photo of a person",
-    ]
+    tag = "a photo of a human face"  # Example tag to group by
     grouped = tagging_and_grouping(
         "/home/zhihao/cs272project/Gradio/examples/photos",
-        LABEL_PROMPTS,
+        tag,
         # save_csv="output.csv"
     )
     print("Grouped images by labels:", grouped)
