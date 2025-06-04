@@ -205,6 +205,7 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
         # Here we just return the same images for demonstration purposes
         image_path_dir = SAVE_DIR
         from imagededup.methods import CNN
+        from imagededup.methods import PHash
 
         cnn_encoder = CNN()
 
@@ -236,9 +237,9 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
             return res_list
 
         res_vec = []
-        res_vec = cnn_encoder.find_duplicates(
+        res_vec = PHash().find_duplicates(
             image_dir=image_path_dir,
-            min_similarity_threshold=0.85,
+            # min_similarity_threshold=0.85,
             # outfile="output/my_duplicates_to_remove.json",
         )
         res_vec = parse_dup_json(res_vec)
@@ -363,7 +364,7 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
             outputs=[cluster_gallery],  # Update the gallery with clustering results
         )
 
-    gr.Markdown("# 📷 Vitural Try On")
+    gr.Markdown("# 👗 Vitural Try On")
     with gr.Row():
         tryon_btn = gr.Button("开始试穿")
     with gr.Row():
@@ -390,8 +391,32 @@ with gr.Blocks(title="智能相册", theme=gr.themes.Soft()) as app:
         outputs=[image_result],
     )
     gallery.select(handle_selection, None, [selected_image, image_human])
+    gr.Markdown("# 🎭 Changing Face")
+    with gr.Row():
+        tryon_btn = gr.Button("开始换脸")
+    with gr.Row():
+        image_human = gr.Image(label="源人物", type="pil", interactive=True, height=300)
+        image_clothes = gr.Image(
+            label="驱动人物", type="pil", interactive=True, height=300
+        )
+        image_result = gr.Image(
+            label="换脸结果", type="pil", interactive=False, height=300
+        )
+    import time
 
-    gr.Markdown("# 📷 VLLM")
+    def handle_face(human, clothes):
+        """Handle virtual try-on processing"""
+        time.sleep(7.5 + 5 * random.random())  # Simulate processing time
+
+        return "/home/zhihao/cs272project/Gradio/examples/tryon_result/result.png"
+
+    tryon_btn.click(
+        fn=handle_face,
+        inputs=[image_human, image_clothes],
+        outputs=[image_result],
+    )
+    gallery.select(handle_selection, None, [selected_image, image_human])
+    gr.Markdown("# 🤖 VLLM")
     import random
     from utils.Qwen_chat import chat_with_images
     import json
