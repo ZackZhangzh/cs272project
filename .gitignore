@@ -116,3 +116,9 @@ StableVITON/save
 grouping
 grouping_crop
 face_detection.ipynb
+StableVITON/cuda
+StableVITON/dataset
+StableVITON/output_viton_colored_dp
+StableVITON/predict_single.py
+StableVITON/show_densepose.ipynb
+StableVITON/single_image_prepare.py
